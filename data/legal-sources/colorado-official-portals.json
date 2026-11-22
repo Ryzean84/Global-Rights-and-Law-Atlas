@@ -1,0 +1,203 @@
+{
+  "schema_version": "0.2.0",
+  "collection_id": "legal-source-collection:colorado-official-portals",
+  "description": "Starter discovery index for official Colorado legal publication portals and two 2026 AI-related enacted acts. Portal records are collection-level pointers; the two acts are individual instruments with separately recorded enactment and commencement metadata.",
+  "legal_sources": [
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-CONSTITUTION-PORTAL",
+      "title": "Colorado Constitution — official legal materials portal",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "People of the State of Colorado; official access provided by the Colorado General Assembly",
+      "source_type": "constitution",
+      "legal_effect": "binding_law_collection",
+      "canonical_url": "https://www.leg.colorado.gov/laws",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "current_collection",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [],
+      "verification_state": "source_checked",
+      "provenance_note": "The General Assembly laws portal identifies the Colorado Constitution as the foundation of state law. This is a portal pointer; cite the relevant constitutional article and section in any substantive record."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-REVISED-STATUTES",
+      "title": "Colorado Revised Statutes — official statutes access and downloads",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly, Office of Legislative Legal Services",
+      "source_type": "statute_collection",
+      "legal_effect": "binding_law_collection",
+      "canonical_url": "https://www.leg.colorado.gov/agencies/office-legislative-legal-services/colorado-revised-statutes",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The Office of Legislative Legal Services explains its role in editing, collating, and revising enacted laws and provides access to CRS titles. Check the edition year and section source notes for every individual provision; online access may include uncertified printouts."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-SESSION-LAWS",
+      "title": "Colorado Session Laws and enacted legislation",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly, Office of Legislative Legal Services",
+      "source_type": "session_laws",
+      "legal_effect": "binding_law_collection",
+      "canonical_url": "https://www.leg.colorado.gov/agencies/office-legislative-legal-services/session-laws-and-statutes",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The General Assembly distinguishes session laws from the codified CRS. Use the enacted act and its section-specific effective-date provisions when recording an individual law; do not infer an effective date from a bill's signature date."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-CODE-OF-COLORADO-REGULATIONS",
+      "title": "Code of Colorado Regulations — official current rules portal",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado Secretary of State; rules are promulgated by authorized agencies",
+      "source_type": "regulation_collection",
+      "legal_effect": "binding_law_collection",
+      "canonical_url": "https://www.sos.state.co.us/CCR/Welcome.do",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-SECRETARY-OF-STATE"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The Secretary of State publishes the official CCR and Colorado Register. Record the promulgating agency, rule citation, adoption history, and effective date at the individual-rule level; the Secretary of State is the publisher, not necessarily the rulemaking authority."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-APPELLATE-OPINIONS",
+      "title": "Colorado appellate court opinions",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado Supreme Court and Colorado Court of Appeals",
+      "source_type": "court_opinion_collection",
+      "legal_effect": "judicial_authority_collection",
+      "canonical_url": "https://www.coloradojudicial.gov/supreme-court/opinions",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-SUPREME-COURT",
+        "institution:US-CO-COURT-OF-APPEALS"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The Judicial Branch publishes slip opinions and links to searchable current and archived case law. Slip opinions may be modified, withdrawn, or corrected; capture docket number, opinion date, publication designation, and later history for each case."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-LEGISLATIVE-BILLS",
+      "title": "Colorado bills, resolutions, memorials, and legislative histories",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly",
+      "source_type": "legislative_record_collection",
+      "legal_effect": "official_record_collection",
+      "canonical_url": "https://www.leg.colorado.gov/bills/bill-search",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "This portal includes bills, memorials, and resolutions, which do not all have the same legal effect. A bill's introduction or passage is not proof of enactment; capture final disposition, enrolled act, chapter number, and effective-date provisions separately."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-STATE-AUDITOR-REPORTS",
+      "title": "Colorado Office of the State Auditor — public audit reports and evaluations",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado Office of the State Auditor; public release through the Legislative Audit Committee process",
+      "source_type": "audit_report_collection",
+      "legal_effect": "oversight_publication",
+      "canonical_url": "https://content.leg.colorado.gov/audits-search",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-STATE-AUDITOR"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The public search portal indexes released audit reports and evaluations. OSA workpapers and some reports remain confidential; never infer that an absent report proves no audit occurred, and never ingest or expose confidential materials."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-SB26-189-CH131",
+      "title": "Senate Bill 26-189 — Automated Decision-Making Technology (Chapter 131, 2026)",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly; approved by the Governor of Colorado",
+      "source_type": "enacted_act",
+      "legal_effect": "binding_law",
+      "canonical_url": "https://leg.colorado.gov/laws/session-laws/SB26-189/131/download",
+      "language": "en",
+      "publication_date": "2026-05-14",
+      "effective_date": "2027-01-01",
+      "record_status": "partially_effective",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY",
+        "institution:US-CO-ATTORNEY-GENERAL"
+      ],
+      "verification_state": "source_checked",
+      "bill_number": "SB26-189",
+      "chapter_number": 131,
+      "effective_date_notes": "The act's general effective date and applicability date are January 1, 2027. Sections 6-1-1704(4), 6-1-1705(3), 6-1-1706(6), 10-3-1104.9(3)(e), the appropriation, the effective-date section, and the safety-clause section take effect upon passage (May 14, 2026). Verify section-level commencement against the enrolled act before applying any individual provision.",
+      "provenance_note": "The official enrolled session law is Chapter 131. The General Assembly bill page identifies the act as signed and supplies bill history and fiscal-note material. The record is an instrument pointer, not a legal interpretation; SB26-189 repeals and reenacts the ADMT provisions and has section-specific commencement."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-HB26-1263-CH208",
+      "title": "House Bill 26-1263 — Conversational Artificial Intelligence Service Operator Requirements (Chapter 208, 2026)",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly; approved by the Governor of Colorado",
+      "source_type": "enacted_act",
+      "legal_effect": "binding_law",
+      "canonical_url": "https://www.leg.colorado.gov/laws/session-laws/HB26-1263/208/download",
+      "language": "en",
+      "publication_date": "2026-05-29",
+      "effective_date": "2026-08-12",
+      "record_status": "effective",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY",
+        "institution:US-CO-ATTORNEY-GENERAL"
+      ],
+      "verification_state": "source_checked",
+      "bill_number": "HB26-1263",
+      "chapter_number": 208,
+      "effective_date_notes": "The act itself took effect August 12, 2026 (the day after the 90-day period following final adjournment, absent a referendum petition). Do not mistake the act's general commencement for the commencement of each operator duty: the duties in subsections (2) through (5) apply on and after January 1, 2027; annual reporting under subsection (6) applies on and after July 1, 2027.",
+      "provenance_note": "The official enrolled session law is Chapter 208 and states that the act was approved May 29, 2026, with an overall effective date of August 12, 2026. Its substantive operator duties have later application dates, and annual reporting starts July 1, 2027. The General Assembly bill page supplies the bill history and summary. This record is an instrument pointer, not a legal interpretation."
+    }
+  ]
+}
