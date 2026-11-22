@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Ryzean84/Global-Rights-and-Law-Atlas/blob/main/schemas/jurisdiction-node.v0.1.schema.json",
+  "title": "Global Rights and Law Atlas jurisdiction node",
+  "description": "Versioned jurisdiction and legal-source registry record. Geographic anchors are modeled separately.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "name", "jurisdiction_type", "languages", "status", "sources", "coverage", "last_reviewed", "review_status"],
+  "properties": {
+    "schema_version": { "const": "0.1.0" },
+    "id": { "type": "string", "pattern": "^jurisdiction:[A-Za-z0-9._:-]+$" },
+    "name": { "type": "object", "minProperties": 1, "additionalProperties": { "type": "string", "minLength": 1 } },
+    "jurisdiction_type": { "enum": ["world", "supranational", "country", "state", "province", "territory", "tribal_nation", "region", "municipality", "county", "other"] },
+    "parent_jurisdiction_id": { "type": ["string", "null"] },
+    "identifiers": { "type": "array", "items": { "$ref": "#/$defs/identifier" }, "default": [] },
+    "country_code": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "languages": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "minLength": 2 } },
+    "status": { "enum": ["active", "historical", "disputed", "unknown"] },
+    "sources": { "type": "array", "items": { "$ref": "#/$defs/source" } },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["areas", "completeness", "known_gaps"],
+      "properties": {
+        "areas": { "type": "array", "items": { "type": "string" } },
+        "completeness": { "enum": ["not_started", "starter_registry", "partial", "substantial", "reviewed_collection"] },
+        "known_gaps": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "last_reviewed": { "type": "string", "format": "date" },
+    "review_status": { "enum": ["draft", "starter_record_needs_expansion", "needs_review", "reviewed"] }
+  },
+  "$defs": {
+    "identifier": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scheme", "value"],
+      "properties": { "scheme": { "type": "string" }, "value": { "type": "string" } }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "authority", "document_type", "url", "language", "legal_status", "status_as_of", "last_verified", "verification_state"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^source:[A-Za-z0-9._:-]+$" },
+        "title": { "type": "string", "minLength": 1 },
+        "authority": { "type": "string", "minLength": 1 },
+        "document_type": { "type": "string", "minLength": 1 },
+        "url": { "type": "string", "format": "uri" },
+        "language": { "type": "string" },
+        "publication_date": { "type": ["string", "null"], "format": "date" },
+        "effective_date": { "type": ["string", "null"], "format": "date" },
+        "legal_status": { "type": "string" },
+        "status_as_of": { "type": "string", "format": "date" },
+        "last_verified": { "type": "string", "format": "date" },
+        "verification_state": { "enum": ["pending_verification", "source_checked", "status_checked", "needs_review"] },
+        "notes": { "type": "string" }
+      }
+    }
+  }
+}
