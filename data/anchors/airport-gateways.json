@@ -1,0 +1,30 @@
+{
+  "schema_version": "0.1.0",
+  "collection_id": "anchor-collection:international-airport-gateways",
+  "description": "Discovery registry for international airport gateways. Airports are geographic discovery points, not legal jurisdictions or proof of which laws apply.",
+  "coordinate_reference_system": "WGS84",
+  "anchors": [
+    {
+      "id": "anchor:airport:US-DEN",
+      "name": "Denver International Airport",
+      "anchor_type": "international_airport",
+      "identifiers": [
+        { "scheme": "IATA", "value": "DEN" },
+        { "scheme": "ICAO", "value": "KDEN" }
+      ],
+      "country_code": "US",
+      "admin_area_hint": "Colorado",
+      "jurisdiction_ids": ["jurisdiction:US", "jurisdiction:US-CO"],
+      "coordinates": null,
+      "coordinate_status": "not_yet_verified",
+      "source_urls": ["https://www.flydenver.com/"],
+      "last_verified": "2026-11-22",
+      "notes": "Colorado pilot gateway. Add verified WGS84 coordinates from an authoritative aviation or airport source before mapping."
+    }
+  ],
+  "expansion_policy": {
+    "initial_scope": "international_airport_gateways",
+    "future_anchor_types": ["seaport", "border_crossing", "city", "town", "county", "state_capitol", "courthouse", "library", "university", "community_archive", "tribal_government"],
+    "rule": "Every anchor references explicit jurisdiction IDs. Never infer legal jurisdiction solely from proximity, airport code, or coordinates."
+  }
+}
