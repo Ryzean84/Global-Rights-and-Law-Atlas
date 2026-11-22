@@ -34,7 +34,7 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 - [Atlas data validator](scripts/validate_atlas_data.py)
 
 ## First pilot: Colorado
-The Colorado legal-source registry now indexes official portals for the Colorado Constitution, Colorado Revised Statutes, session laws, the Code of Colorado Regulations, appellate opinions, legislative records, and public State Auditor reports. These are collection-level discovery pointers. Individual instruments still require their own records, including enactment or decision history, effective dates, publication status, and supersession relationships.
+The Colorado legal-source registry now indexes seven official publication portals and two individual 2026 enacted AI laws: SB26-189 (Automated Decision-Making Technology, Chapter 131) and HB26-1263 (Conversational Artificial Intelligence Service Operator Requirements, Chapter 208). The individual act records preserve distinct overall and section-specific commencement dates; they are source pointers, not legal interpretations. The seven portal records remain collection-level discovery pointers.
 
 The geographic pilot begins with the Colorado State Capitol, Ralph L. Carr Colorado Judicial Center, Denver City and County Building, and Denver International Airport. Each physical anchor is linked to explicit jurisdiction records and a separate site catalog. First-class institution records identify the government bodies and courts associated with those sites.
 
@@ -58,6 +58,6 @@ Run the local validator with `python scripts/validate_atlas_data.py` after insta
 Git history, checksums, signatures, append-only event records, Merkle roots, and independent mirrors can make changes detectable. They do not prove a source is truthful, a legal interpretation is correct, a record is complete, or a law is fair. No cryptocurrency or single blockchain is required.
 
 ## Current maturity
-This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, six geographic anchors, six site catalogs, fourteen institution records, seven Colorado legal-source portal records, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
+This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, six geographic anchors, six site catalogs, fourteen institution records, nine Colorado legal-source records (seven portals and two enacted acts), versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
 
 **Build locally. Connect globally. Preserve independently.**
