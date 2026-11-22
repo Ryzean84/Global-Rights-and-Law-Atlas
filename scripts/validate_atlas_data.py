@@ -206,6 +206,82 @@ def main() -> int:
     if not legal_source_files:
         report("data/legal-sources: no legal-source collections found")
 
+
+    oversight_files = sorted((DATA / "oversight").rglob("*.json"))
+    oversight_records: dict[str, tuple[Path, dict]] = {}
+    for path in oversight_files:
+        payload = load_json(path)
+        if not isinstance(payload, dict):
+            continue
+        if payload.get("schema_version") != "0.3.0":
+            report(f"{path.relative_to(ROOT)}: schema_version must be 0.3.0")
+        if not isinstance(payload.get("collection_id"), str) or not payload["collection_id"]:
+            report(f"{path.relative_to(ROOT)}: collection_id is required")
+        records = payload.get("records")
+        if not isinstance(records, list):
+            report(f"{path.relative_to(ROOT)}: records must be an array")
+            continue
+        for index, record in enumerate(records):
+            if not isinstance(record, dict):
+                report(f"{path.relative_to(ROOT)}: records[{index}] must be an object")
+                continue
+            validate_schema(record, schemas["oversight"], path)
+            record_id = record.get("id")
+            if isinstance(record_id, str):
+                if record_id in oversight_records:
+                    report(f"{path.relative_to(ROOT)}: duplicate oversight id {record_id}")
+                else:
+                    oversight_records[record_id] = (path, record)
+            if record.get("jurisdiction_id") not in jurisdictions:
+                report(f"{path.relative_to(ROOT)}: oversight record {record_id} references unknown jurisdiction {record.get('jurisdiction_id')}")
+            for institution_id in record.get("lead_institution_ids", []) + record.get("related_institution_ids", []):
+                if institution_id not in institutions:
+                    report(f"{path.relative_to(ROOT)}: oversight record {record_id} references unknown institution {institution_id}")
+            for source_id in record.get("source_ids", []):
+                if source_id not in legal_sources:
+                    report(f"{path.relative_to(ROOT)}: oversight record {record_id} references unknown legal source {source_id}")
+    if not oversight_files:
+        report("data/oversight: no oversight collections found")
+
+    government_ai_files = sorted((DATA / "government-ai").rglob("*.json"))
+    government_ai_records: dict[str, tuple[Path, dict]] = {}
+    for path in government_ai_files:
+        payload = load_json(path)
+        if not isinstance(payload, dict):
+            continue
+        if payload.get("schema_version") != "0.3.0":
+            report(f"{path.relative_to(ROOT)}: schema_version must be 0.3.0")
+        if not isinstance(payload.get("collection_id"), str) or not payload["collection_id"]:
+            report(f"{path.relative_to(ROOT)}: collection_id is required")
+        records = payload.get("records")
+        if not isinstance(records, list):
+            report(f"{path.relative_to(ROOT)}: records must be an array")
+            continue
+        for index, record in enumerate(records):
+            if not isinstance(record, dict):
+                report(f"{path.relative_to(ROOT)}: records[{index}] must be an object")
+                continue
+            validate_schema(record, schemas["government_ai"], path)
+            system_id = record.get("id")
+            if isinstance(system_id, str):
+                if system_id in government_ai_records:
+                    report(f"{path.relative_to(ROOT)}: duplicate government AI system id {system_id}")
+                else:
+                    government_ai_records[system_id] = (path, record)
+            if record.get("jurisdiction_id") not in jurisdictions:
+                report(f"{path.relative_to(ROOT)}: government AI system {system_id} references unknown jurisdiction {record.get('jurisdiction_id')}")
+            for institution_id in record.get("owner_institution_ids", []) + record.get("operator_institution_ids", []):
+                if institution_id not in institutions:
+                    report(f"{path.relative_to(ROOT)}: government AI system {system_id} references unknown institution {institution_id}")
+            for source_id in record.get("legal_source_ids", []):
+                if source_id not in legal_sources:
+                    report(f"{path.relative_to(ROOT)}: government AI system {system_id} references unknown legal source {source_id}")
+            for oversight_id in record.get("oversight_record_ids", []):
+                if oversight_id not in oversight_records:
+                    report(f"{path.relative_to(ROOT)}: government AI system {system_id} references unknown oversight record {oversight_id}")
+    if not government_ai_files:
+        report("data/government-ai: no government AI inventory collections found")
+
     if errors:
         print("\n".join(f"ERROR: {message}" for message in errors))
         print(f"Atlas validation failed with {len(errors)} error(s).")
