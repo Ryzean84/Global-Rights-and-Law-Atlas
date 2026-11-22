@@ -1,14 +1,200 @@
 {
   "schema_version": "0.3.0",
   "collection_id": "government-ai-inventory:colorado-state-pilot",
-  "description": "Evidence-first inventory of AI systems used, procured, piloted, or formally planned by Colorado public institutions. No individual system records have yet met the evidence threshold for inclusion in this initial collection. This empty collection is an explicit research gap, not evidence that Colorado agencies use no AI.",
+  "description": "Evidence-first inventory of AI systems used, procured, piloted, or formally planned by Colorado public institutions. Initial entries are transcribed from Colorado OIT's public GenAI Projects inventory and its AI Inventory presented to the Joint Technology Committee on December 16, 2025. Status is source-reported and must be rechecked before operational or legal conclusions.",
   "coverage_statement": "Initial coverage target: Colorado state agencies and statewide constitutional offices. Future phases may add counties, municipalities, courts, public universities, special districts, and federally funded programs with jurisdiction and ownership represented separately.",
   "discovery_gaps": [
-    "Agency AI use-case inventories and algorithmic impact assessments",
-    "Procurement contracts, statements of work, and vendor disclosures",
-    "Public notices and privacy impact assessments",
-    "System purpose, decision domains, affected populations, and human review arrangements",
-    "Independent audits, evaluations, complaints, and incident disclosures"
+    "Obtain and version the latest agency AI inventory; the cited Joint Technology Committee inventory is dated December 16, 2025.",
+    "Obtain underlying contracts, statements of work, amendments, pricing, data-processing terms, and vendor disclosures.",
+    "Collect agency risk assessments, system cards, privacy assessments, security reviews, model evaluations, and monitoring records.",
+    "Verify current deployment status, version, vendor/model changes, affected populations, data flows, and human-review controls.",
+    "Determine whether any system output is used in a consequential decision despite published statements that systems do not make decisions.",
+    "Link relevant audits, complaints, incidents, enforcement actions, public notices, and statutory or regulatory authorities."
   ],
-  "records": []
+  "records": [
+    {
+      "schema_version": "0.3.0",
+      "id": "government-ai:US-CO-HCPF-CBMS-PANDA",
+      "system_name": "CBMS — PANDA Policy Engine",
+      "vendor": "Deloitte",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "owner_institution_ids": [
+        "institution:US-CO-HCPF"
+      ],
+      "operator_institution_ids": [],
+      "deployment_status": "active",
+      "system_role": "generative_assistant",
+      "purpose": "Summarizes policy research and provides generalized answers with links to underlying source documents for county caseworkers responding to case questions.",
+      "decision_domains": [
+        "public_benefits"
+      ],
+      "affected_population": "County caseworkers are the direct users; public-benefits applicants or members may be indirectly affected by the information used in caseworker workflows.",
+      "human_oversight": "The published project description states the tool does not make decisions about individuals and provides generalized, anonymized information. The policy team remains responsible for research and responses. Verify current workflow and controls.",
+      "public_notice_url": null,
+      "procurement_urls": [],
+      "public_evidence_urls": [
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-GenAI%20Projects.pdf",
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-AI%20Inventory%20JTC%2012-16-2025.pdf"
+      ],
+      "legal_source_ids": [],
+      "oversight_record_ids": [],
+      "verification_state": "source_checked",
+      "last_checked": "2026-11-22",
+      "provenance_note": "Listed by Colorado OIT as approved and in production in its public GenAI Projects document. OIT identifies Deloitte and Claude Sonnet 3.5, and states the engine does not make individual decisions. This is a source-checked entry, not an independent technical audit; verify the current model, data boundaries, and use in live casework."
+    },
+    {
+      "schema_version": "0.3.0",
+      "id": "government-ai:US-CO-HCPF-CBMS-VERIFICATION-OCR",
+      "system_name": "CBMS — Verification Document Automation (HyperScience)",
+      "vendor": "HyperScience",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "owner_institution_ids": [
+        "institution:US-CO-HCPF"
+      ],
+      "operator_institution_ids": [],
+      "deployment_status": "active",
+      "system_role": "workflow_automation",
+      "purpose": "Extracts and verifies information from scanned applicant verification documents using OCR and document parsing to reduce manual effort and correction work.",
+      "decision_domains": [
+        "public_benefits"
+      ],
+      "affected_population": "Applicants or members whose verification documents are processed, and county caseworkers reviewing those documents.",
+      "human_oversight": "The published project description states a human must review the system output. It does not establish whether the output can influence eligibility or other consequential decisions; that workflow requires further verification.",
+      "public_notice_url": null,
+      "procurement_urls": [],
+      "public_evidence_urls": [
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-GenAI%20Projects.pdf",
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-AI%20Inventory%20JTC%2012-16-2025.pdf"
+      ],
+      "legal_source_ids": [],
+      "oversight_record_ids": [],
+      "verification_state": "source_checked",
+      "last_checked": "2026-11-22",
+      "provenance_note": "Colorado OIT describes this as approved and in production, with HyperScience OCR and assistance from Google Gemini and Anthropic Claude. The public description says a human reviews output. Do not infer automated eligibility determination; obtain workflow, contract, validation, error-rate, and appeal evidence."
+    },
+    {
+      "schema_version": "0.3.0",
+      "id": "government-ai:US-CO-CDLE-UI-VIRTUAL-AGENT",
+      "system_name": "Unemployment Insurance AI Virtual Agent and Claimant Chatbot",
+      "vendor": "Ivy.ai / Deloitte; related telephony services include Egen and Google Gemini",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "owner_institution_ids": [
+        "institution:US-CO-CDLE"
+      ],
+      "operator_institution_ids": [],
+      "deployment_status": "active",
+      "system_role": "generative_assistant",
+      "purpose": "Provides authenticated, claimant-specific unemployment-insurance information and self-service support, including information about overpayments, payment plans, and pending issues; related virtual-agent and IVR components automate call handling.",
+      "decision_domains": [
+        "public_benefits"
+      ],
+      "affected_population": "Colorado unemployment-insurance claimants and callers seeking information about their claims.",
+      "human_oversight": "The published project inventory states chatbot responses are not used to inform decisions about an individual and the tool does not decide claims. Human decision-making remains outside the chatbot. Verify escalation, authentication, content accuracy, and whether any outputs enter caseworker workflows.",
+      "public_notice_url": null,
+      "procurement_urls": [],
+      "public_evidence_urls": [
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-GenAI%20Projects.pdf",
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-AI%20Inventory%20JTC%2012-16-2025.pdf",
+        "https://oit.colorado.gov/"
+      ],
+      "legal_source_ids": [],
+      "oversight_record_ids": [],
+      "verification_state": "source_checked",
+      "last_checked": "2026-11-22",
+      "provenance_note": "Colorado OIT's published GenAI Projects document reports mixed production/pre-production status across features and states the chatbot does not make decisions or inform decisions about individuals. It reports a reduction in wait times and live-agent calls. Treat the system as an active public-facing information service; reported performance metrics are agency-reported, not independently validated."
+    },
+    {
+      "schema_version": "0.3.0",
+      "id": "government-ai:US-CO-CDLE-WORKERS-COMP-NAVIGATOR",
+      "system_name": "Workers' Compensation Discovery Navigator",
+      "vendor": "CapTech; AWS Textract and AWS Bedrock components",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "owner_institution_ids": [
+        "institution:US-CO-CDLE"
+      ],
+      "operator_institution_ids": [],
+      "deployment_status": "active",
+      "system_role": "workflow_automation",
+      "purpose": "Automates classification, deduplication, organization, and retrieval of workers' compensation medical-record packets; the published project also describes planned chatbot and compliance-audit features.",
+      "decision_domains": [
+        "public_services",
+        "healthcare"
+      ],
+      "affected_population": "Workers' compensation claimants whose medical records are processed, and Division of Independent Medical Examination staff.",
+      "human_oversight": "The published project description states the tool does not decide workers' compensation application approvals. Newer chatbot and audit features are described as development work; confirm which features are currently live and how reviewers validate outputs.",
+      "public_notice_url": null,
+      "procurement_urls": [],
+      "public_evidence_urls": [
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-GenAI%20Projects.pdf",
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-AI%20Inventory%20JTC%2012-16-2025.pdf"
+      ],
+      "legal_source_ids": [],
+      "oversight_record_ids": [],
+      "verification_state": "source_checked",
+      "last_checked": "2026-11-22",
+      "provenance_note": "Colorado OIT reports the Discovery Navigator replacement as in production while new features remain in development. The source describes medical-record processing and explicitly says the tool does not decide workers' compensation approvals. This record intentionally separates the production replacement from proposed feature scope; obtain contracts, data-flow diagrams, and feature-level deployment evidence."
+    },
+    {
+      "schema_version": "0.3.0",
+      "id": "government-ai:US-CO-DOC-RECIDIVIZ",
+      "system_name": "Colorado Department of Corrections — Recidiviz project",
+      "vendor": "Recidiviz",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "owner_institution_ids": [
+        "institution:US-CO-DOC"
+      ],
+      "operator_institution_ids": [],
+      "deployment_status": "planned",
+      "system_role": "decision_support",
+      "purpose": "Planned staff-support capabilities include transcription and summarization of operational meetings, action-item generation, case-planning documentation, and reporting or resource recommendations.",
+      "decision_domains": [
+        "law_enforcement",
+        "public_services"
+      ],
+      "affected_population": "Corrections staff are the direct users; incarcerated people and people under supervision may be represented in operational records or indirectly affected by staff workflows.",
+      "human_oversight": "The published project description states outputs are for support only and require human review and validation; AI is not the authority for decisions concerning individuals. The project is described as pre-production/in planning, not as a confirmed live Colorado deployment.",
+      "public_notice_url": null,
+      "procurement_urls": [],
+      "public_evidence_urls": [
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-GenAI%20Projects.pdf",
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-AI%20Inventory%20JTC%2012-16-2025.pdf"
+      ],
+      "legal_source_ids": [],
+      "oversight_record_ids": [],
+      "verification_state": "source_checked",
+      "last_checked": "2026-11-22",
+      "provenance_note": "Colorado OIT lists Recidiviz as approved, pre-production and in planning. The public description says staff-support use only and mandatory human review. Do not describe this as an active Colorado deployment or an automated parole, classification, or discipline system; the source explicitly says AI does not decide outcomes."
+    },
+    {
+      "schema_version": "0.3.0",
+      "id": "government-ai:US-CO-DPA-HR-EXPERT",
+      "system_name": "Department of Personnel and Administration — HR Expert Systems Pilot",
+      "vendor": "Developed with agency resources; Google NotebookLM (Gemini)",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "owner_institution_ids": [
+        "institution:US-CO-DPA"
+      ],
+      "operator_institution_ids": [],
+      "deployment_status": "pilot",
+      "system_role": "generative_assistant",
+      "purpose": "Provides HR professionals with a retrieval-oriented interface to publicly available HR resources, including the state constitution, statutes, HR guidelines, and policies.",
+      "decision_domains": [
+        "employment",
+        "internal_administration"
+      ],
+      "affected_population": "State HR professionals are the direct users; state employees may be indirectly affected by guidance informed by the system.",
+      "human_oversight": "The published project description states the tool does not make decisions and retrieves information from supplied public documents. Human HR professionals remain responsible for interpretation and action.",
+      "public_notice_url": null,
+      "procurement_urls": [],
+      "public_evidence_urls": [
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-GenAI%20Projects.pdf",
+        "https://content.leg.colorado.gov/sites/default/files/2025-12/OIT-AI%20Inventory%20JTC%2012-16-2025.pdf"
+      ],
+      "legal_source_ids": [],
+      "oversight_record_ids": [],
+      "verification_state": "source_checked",
+      "last_checked": "2026-11-22",
+      "provenance_note": "Colorado OIT lists this project as approved and pre-production/pilot, agency-developed, using Google NotebookLM (Gemini). The public description says it does not make decisions. Do not imply statewide production deployment or HR decision automation."
+    }
+  ]
 }
