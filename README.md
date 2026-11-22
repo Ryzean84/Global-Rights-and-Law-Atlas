@@ -52,6 +52,6 @@ Run the local validator with `python scripts/validate_atlas_data.py` after insta
 Git history, checksums, signatures, append-only event records, Merkle roots, and independent mirrors can make changes detectable. They do not prove a source is truthful, a legal interpretation is correct, a record is complete, or a law is fair. No cryptocurrency or single blockchain is required.
 
 ## Current maturity
-This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, four geographic anchors, four site catalogs, nine institution records, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
+This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, four geographic anchors, four site catalogs, twelve institution records, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
 
 **Build locally. Connect globally. Preserve independently.**
