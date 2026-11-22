@@ -101,8 +101,8 @@
     {
       "schema_version": "0.1.0",
       "id": "institution:US-CO-TREASURY",
-      "name": "Colorado Department of the Treasury",
-      "institution_type": "state_agency",
+      "name": "Office of the Colorado State Treasurer",
+      "institution_type": "executive_office",
       "jurisdiction_ids": [
         "jurisdiction:US",
         "jurisdiction:US-CO"
@@ -111,11 +111,13 @@
         "site:US-CO-CAPITOL"
       ],
       "source_urls": [
-        "https://content.leg.colorado.gov/Visit-Learn"
+        "https://treasury.colorado.gov/",
+        "https://www.leg.colorado.gov/sites/default/files/visitor_brochure_for_web_accessible.pdf",
+        "https://content.leg.colorado.gov/sites/default/files/fy2026-27_trefig.pdf"
       ],
       "last_verified": "2026-11-22",
       "verification_state": "source_checked",
-      "notes": "The General Assembly's Capitol visitor information identifies the Department of the Treasury as housed in the Capitol."
+      "notes": "The State Treasurer is an independently elected constitutional officer whose office is located in the State Capitol. The Treasurer oversees the Department of the Treasury; this record identifies the elected office and its Capitol site, not every department facility."
     },
     {
       "schema_version": "0.1.0",
