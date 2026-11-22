@@ -1,0 +1,170 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Ryzean84/Global-Rights-and-Law-Atlas/blob/main/schemas/government-ai-system.v0.3.schema.json",
+  "title": "Atlas government AI system inventory record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "system_name",
+    "jurisdiction_id",
+    "owner_institution_ids",
+    "deployment_status",
+    "system_role",
+    "decision_domains",
+    "public_evidence_urls",
+    "legal_source_ids",
+    "oversight_record_ids",
+    "verification_state",
+    "last_checked",
+    "provenance_note"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.3.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^government-ai:[A-Za-z0-9._:-]+$"
+    },
+    "system_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "vendor": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "jurisdiction_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "owner_institution_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "operator_institution_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "deployment_status": {
+      "enum": [
+        "discovery",
+        "planned",
+        "procurement",
+        "pilot",
+        "active",
+        "paused",
+        "retired",
+        "unknown"
+      ]
+    },
+    "system_role": {
+      "enum": [
+        "decision_support",
+        "automated_decision",
+        "generative_assistant",
+        "classification",
+        "prediction_scoring",
+        "biometric",
+        "workflow_automation",
+        "other",
+        "unknown"
+      ]
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "decision_domains": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "education",
+          "employment",
+          "housing",
+          "financial_services",
+          "insurance",
+          "healthcare",
+          "public_benefits",
+          "law_enforcement",
+          "immigration",
+          "transportation",
+          "public_services",
+          "internal_administration",
+          "other"
+        ]
+      }
+    },
+    "affected_population": {
+      "type": "string"
+    },
+    "human_oversight": {
+      "type": "string"
+    },
+    "public_notice_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "procurement_urls": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "public_evidence_urls": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "legal_source_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "oversight_record_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification_state": {
+      "enum": [
+        "unverified_lead",
+        "source_checked",
+        "institution_confirmed",
+        "independently_reviewed"
+      ]
+    },
+    "last_checked": {
+      "type": "string",
+      "format": "date"
+    },
+    "provenance_note": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}

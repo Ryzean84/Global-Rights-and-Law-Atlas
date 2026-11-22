@@ -1,0 +1,14 @@
+{
+  "schema_version": "0.3.0",
+  "collection_id": "government-ai-inventory:colorado-state-pilot",
+  "description": "Evidence-first inventory of AI systems used, procured, piloted, or formally planned by Colorado public institutions. No individual system records have yet met the evidence threshold for inclusion in this initial collection. This empty collection is an explicit research gap, not evidence that Colorado agencies use no AI.",
+  "coverage_statement": "Initial coverage target: Colorado state agencies and statewide constitutional offices. Future phases may add counties, municipalities, courts, public universities, special districts, and federally funded programs with jurisdiction and ownership represented separately.",
+  "discovery_gaps": [
+    "Agency AI use-case inventories and algorithmic impact assessments",
+    "Procurement contracts, statements of work, and vendor disclosures",
+    "Public notices and privacy impact assessments",
+    "System purpose, decision domains, affected populations, and human review arrangements",
+    "Independent audits, evaluations, complaints, and incident disclosures"
+  ],
+  "records": []
+}
