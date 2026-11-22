@@ -1,7 +1,7 @@
 {
   "schema_version": "0.2.0",
   "collection_id": "legal-source-collection:colorado-official-portals",
-  "description": "Starter discovery index for official Colorado legal and oversight publication portals. These are collection-level pointers, not individual legal instruments or a certification that every item linked from a portal is current.",
+  "description": "Starter discovery index for official Colorado legal publication portals and two 2026 AI-related enacted acts. Portal records are collection-level pointers; the two acts are individual instruments with separately recorded enactment and commencement metadata.",
   "legal_sources": [
     {
       "schema_version": "0.2.0",
@@ -148,6 +148,56 @@
       ],
       "verification_state": "source_checked",
       "provenance_note": "The public search portal indexes released audit reports and evaluations. OSA workpapers and some reports remain confidential; never infer that an absent report proves no audit occurred, and never ingest or expose confidential materials."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-SB26-189-CH131",
+      "title": "Senate Bill 26-189 — Automated Decision-Making Technology (Chapter 131, 2026)",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly; approved by the Governor of Colorado",
+      "source_type": "enacted_act",
+      "legal_effect": "binding_law",
+      "canonical_url": "https://leg.colorado.gov/laws/session-laws/SB26-189/131/download",
+      "language": "en",
+      "publication_date": "2026-05-14",
+      "effective_date": "2027-01-01",
+      "record_status": "partially_effective",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY",
+        "institution:US-CO-ATTORNEY-GENERAL"
+      ],
+      "verification_state": "source_checked",
+      "bill_number": "SB26-189",
+      "chapter_number": 131,
+      "effective_date_notes": "The act's general effective date and applicability date are January 1, 2027. Sections 6-1-1704(4), 6-1-1705(3), 6-1-1706(6), 10-3-1104.9(3)(e), the appropriation, the effective-date section, and the safety-clause section take effect upon passage (May 14, 2026). Verify section-level commencement against the enrolled act before applying any individual provision.",
+      "provenance_note": "The official enrolled session law is Chapter 131. The General Assembly bill page identifies the act as signed and supplies bill history and fiscal-note material. The record is an instrument pointer, not a legal interpretation; SB26-189 repeals and reenacts the ADMT provisions and has section-specific commencement."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-HB26-1263-CH208",
+      "title": "House Bill 26-1263 — Conversational Artificial Intelligence Service Operator Requirements (Chapter 208, 2026)",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly; approved by the Governor of Colorado",
+      "source_type": "enacted_act",
+      "legal_effect": "binding_law",
+      "canonical_url": "https://www.leg.colorado.gov/laws/session-laws/HB26-1263/208/download",
+      "language": "en",
+      "publication_date": "2026-06-01",
+      "effective_date": "2027-01-01",
+      "record_status": "enacted_not_yet_effective",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY",
+        "institution:US-CO-ATTORNEY-GENERAL"
+      ],
+      "verification_state": "source_checked",
+      "bill_number": "HB26-1263",
+      "chapter_number": 208,
+      "effective_date_notes": "The enacted bill page states that the act's operator requirements take effect January 1, 2027. The session-law listing shows Chapter 208 and a separate session-law publication/effective-date field; do not confuse that listing field with the act's substantive commencement date.",
+      "provenance_note": "The official enrolled session law is Chapter 208. The General Assembly bill page states that the act became law, identifies the signed act, and provides bill history. This record is an instrument pointer, not a legal interpretation."
     }
   ]
 }
