@@ -51,7 +51,8 @@
         "court_opinion_collection",
         "legislative_record_collection",
         "audit_report_collection",
-        "other"
+        "other",
+        "enacted_act"
       ]
     },
     "legal_effect": {
@@ -61,7 +62,8 @@
         "judicial_authority_collection",
         "oversight_publication",
         "reference_only",
-        "unknown"
+        "unknown",
+        "binding_law"
       ]
     },
     "canonical_url": {
@@ -91,7 +93,12 @@
         "ongoing",
         "current_collection",
         "historical_archive",
-        "unknown"
+        "unknown",
+        "enacted_not_yet_effective",
+        "partially_effective",
+        "effective",
+        "repealed",
+        "superseded"
       ]
     },
     "status_as_of": {
@@ -119,6 +126,17 @@
     "provenance_note": {
       "type": "string",
       "minLength": 1
+    },
+    "bill_number": {
+      "type": "string",
+      "minLength": 1
+    },
+    "chapter_number": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "effective_date_notes": {
+      "type": "string"
     }
   }
 }
