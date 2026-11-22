@@ -41,5 +41,10 @@
   ],
   "last_verified": "2026-11-22",
   "verification_state": "official_information_sources_checked",
-  "notes": "The City and County Building is a municipal civic anchor. Its physical location does not itself define the complete territorial or subject-matter scope of Denver law."
+  "notes": "The City and County Building is a municipal civic anchor. Its physical location does not itself define the complete territorial or subject-matter scope of Denver law.",
+  "institution_ids": [
+    "institution:US-CO-DENVER-MUNICIPAL-GOVERNMENT",
+    "institution:US-CO-DENVER-MAYOR",
+    "institution:US-CO-DENVER-CITY-COUNCIL"
+  ]
 }
