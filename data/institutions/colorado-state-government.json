@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "collection_id": "institution-collection:colorado-state-government",
-  "description": "Starter registry of Colorado legislative and executive institutions associated with the Colorado State Capitol.",
+  "description": "Starter registry of Colorado legislative and executive institutions, expanded with agency identities referenced by the public-sector AI inventory. Agency site links remain empty until physical locations are separately verified.",
   "institutions": [
     {
       "schema_version": "0.1.0",
@@ -138,6 +138,108 @@
       "last_verified": "2026-11-22",
       "verification_state": "source_checked",
       "notes": "Statewide elected executive office responsible for election administration and other statutory public services. The official Capitol visitor guide identifies its office at 1700 Broadway, not inside the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-OIT",
+      "name": "Colorado Governor's Office of Information Technology",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [],
+      "source_urls": [
+        "https://oit.colorado.gov/"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Statewide technology authority. Agency-specific AI systems may be managed by the owning department; OIT policy and support do not by themselves establish operational ownership. No physical site is linked in this pilot record; the Atlas does not infer a headquarters or service location from this inventory."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-CDLE",
+      "name": "Colorado Department of Labor and Employment",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [],
+      "source_urls": [
+        "https://cdle.colorado.gov/"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Agency owner for the unemployment-insurance and workers' compensation GenAI projects described in the State's published project inventory. No physical site is linked in this pilot record; the Atlas does not infer a headquarters or service location from this inventory."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-HCPF",
+      "name": "Colorado Department of Health Care Policy and Financing",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [],
+      "source_urls": [
+        "https://hcpf.colorado.gov/"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Agency owner for Colorado Benefits Management System (CBMS) and Medicaid-related projects described in the State's published GenAI project inventory. No physical site is linked in this pilot record; the Atlas does not infer a headquarters or service location from this inventory."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-CDPHE",
+      "name": "Colorado Department of Public Health and Environment",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [],
+      "source_urls": [
+        "https://cdphe.colorado.gov/"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Agency owner for the CEOS chatbot improvement project described in the State's published GenAI project inventory. No physical site is linked in this pilot record; the Atlas does not infer a headquarters or service location from this inventory."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-DOC",
+      "name": "Colorado Department of Corrections",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [],
+      "source_urls": [
+        "https://doc.colorado.gov/"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Agency owner for the planned Recidiviz project described in the State's published GenAI project inventory. No physical site is linked in this pilot record; the Atlas does not infer a headquarters or service location from this inventory."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-DPA",
+      "name": "Colorado Department of Personnel and Administration",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [],
+      "source_urls": [
+        "https://dpa.colorado.gov/"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Agency owner for the HR Expert Systems pilot described in the State's published GenAI project inventory. No physical site is linked in this pilot record; the Atlas does not infer a headquarters or service location from this inventory."
     }
   ]
 }
