@@ -27,6 +27,7 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 - [Geographic-anchor JSON Schema](schemas/geographic-anchor.v0.1.schema.json)
 - [Jurisdiction-node JSON Schema](schemas/jurisdiction-node.v0.1.schema.json)
 - [Institution JSON Schema](schemas/institution.v0.1.schema.json)
+- [Site catalog JSON Schema](schemas/site-catalog.v0.1.schema.json)
 - [Atlas data validator](scripts/validate_atlas_data.py)
 
 ## First pilot: Colorado
