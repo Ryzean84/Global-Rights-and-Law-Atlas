@@ -1,0 +1,37 @@
+{
+  "schema_version": "0.1.0",
+  "site_id": "site:US-CO-CAPITOL",
+  "anchor_id": "anchor:state-capitol:US-CO-DEN",
+  "name": "Colorado State Capitol",
+  "operator_or_authority": "Colorado General Assembly / State of Colorado",
+  "jurisdiction_ids": ["jurisdiction:US", "jurisdiction:US-CO"],
+  "official_information_sources": [
+    {
+      "title": "Welcome to the Colorado State Capitol",
+      "url": "https://content.leg.colorado.gov/Visit-Learn",
+      "scope": "Visitor entrances, security screening, weapons prohibition, public hours"
+    },
+    {
+      "title": "Capitol Tour Information",
+      "url": "https://content.leg.colorado.gov/content/tour-information",
+      "scope": "Tour procedures, visitor access, schedules and accessibility information"
+    },
+    {
+      "title": "Capitol Information",
+      "url": "https://content.leg.colorado.gov/capitol-information",
+      "scope": "Visitor information, photography, accessibility, public galleries and building services"
+    }
+  ],
+  "visitor_rule_topics": [
+    "public entrances and security screening",
+    "prohibited items and weapons restrictions",
+    "building hours and closures",
+    "tour procedures and capacity",
+    "gallery conduct during legislative proceedings",
+    "photography and recording",
+    "accessibility and accommodations"
+  ],
+  "last_verified": "2026-11-22",
+  "verification_state": "official_information_sources_checked",
+  "notes": "These pages contain visitor information and site policies; do not classify every visitor instruction as a statute or regulation. Where an enforceable legal instrument exists, create a separate legal-source record and cite it."
+}
