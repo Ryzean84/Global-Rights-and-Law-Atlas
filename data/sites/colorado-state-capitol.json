@@ -4,7 +4,10 @@
   "anchor_id": "anchor:state-capitol:US-CO-DEN",
   "name": "Colorado State Capitol",
   "operator_or_authority": "Colorado General Assembly / State of Colorado",
-  "jurisdiction_ids": ["jurisdiction:US", "jurisdiction:US-CO"],
+  "jurisdiction_ids": [
+    "jurisdiction:US",
+    "jurisdiction:US-CO"
+  ],
   "official_information_sources": [
     {
       "title": "Welcome to the Colorado State Capitol",
@@ -33,5 +36,13 @@
   ],
   "last_verified": "2026-11-22",
   "verification_state": "official_information_sources_checked",
-  "notes": "These pages contain visitor information and site policies; do not classify every visitor instruction as a statute or regulation. Where an enforceable legal instrument exists, create a separate legal-source record and cite it."
+  "notes": "These pages contain visitor information and site policies; do not classify every visitor instruction as a statute or regulation. Where an enforceable legal instrument exists, create a separate legal-source record and cite it.",
+  "institution_ids": [
+    "institution:US-CO-GENERAL-ASSEMBLY",
+    "institution:US-CO-SENATE",
+    "institution:US-CO-HOUSE",
+    "institution:US-CO-GOVERNOR",
+    "institution:US-CO-LIEUTENANT-GOVERNOR",
+    "institution:US-CO-TREASURY"
+  ]
 }
