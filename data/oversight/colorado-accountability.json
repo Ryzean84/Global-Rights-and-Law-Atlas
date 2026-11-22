@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.3.0",
+  "collection_id": "oversight-collection:colorado-accountability",
+  "description": "Starter public accountability records. This registry includes only publicly evidenced records; a missing record does not establish that no audit, investigation, system, or enforcement activity exists.",
+  "records": [
+    {
+      "schema_version": "0.3.0",
+      "id": "oversight:US-CO-OSA-2551P-IT",
+      "record_type": "audit_report",
+      "title": "Cybersecurity Resiliency — Public Report (Report 2551P-IT)",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "lead_institution_ids": [
+        "institution:US-CO-STATE-AUDITOR"
+      ],
+      "related_institution_ids": [
+        "institution:US-CO-GOVERNOR"
+      ],
+      "status": "published",
+      "status_as_of": "2026-11-22",
+      "source_ids": [
+        "legal-source:US-CO-STATE-AUDITOR-REPORTS"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/audits-search"
+      ],
+      "evidence_grade": "primary_source",
+      "publication_period": "2026-01",
+      "summary": "The Office of the State Auditor's public audit index lists an IT audit titled Cybersecurity Resiliency — Public Report, report number 2551P-IT, released January 2026, with the Governor's Office listed as the department. The index is the evidence for the existence and classification of this public report.",
+      "limitations": "This record does not assert that the report audited an AI system. The report itself must be retrieved and reviewed before recording findings, recommendations, scope, or management responses. The State Auditor states that reports remain confidential until publicly released; do not seek or ingest confidential workpapers.",
+      "last_checked": "2026-11-22"
+    },
+    {
+      "schema_version": "0.3.0",
+      "id": "oversight:US-CO-CCR-904-6-2026-00360",
+      "record_type": "rulemaking",
+      "title": "Automated Decision-Making Technology & Conversational Artificial Intelligence Service Rules (4 CCR 904-6)",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "lead_institution_ids": [
+        "institution:US-CO-ATTORNEY-GENERAL"
+      ],
+      "related_institution_ids": [
+        "institution:US-CO-SECRETARY-OF-STATE",
+        "institution:US-CO-GENERAL-ASSEMBLY"
+      ],
+      "status": "adopted_by_department_filing_pending_reported_not_yet_final",
+      "status_as_of": "2026-11-22",
+      "source_ids": [
+        "legal-source:US-CO-SB26-189-CH131",
+        "legal-source:US-CO-HB26-1263-CH208",
+        "legal-source:US-CO-CODE-OF-COLORADO-REGULATIONS"
+      ],
+      "source_urls": [
+        "https://coag.gov/ai/",
+        "https://finance.yahoo.com/technology/ai/articles/colorado-adopted-admt-rules-final-164525368.html"
+      ],
+      "evidence_grade": "primary_and_secondary",
+      "tracking_number": "2026-00360",
+      "rule_citation": "4 CCR 904-6",
+      "milestones": [
+        {
+          "date": "2026-08-11",
+          "event": "Proposed rules filed with the Secretary of State",
+          "status": "proposed",
+          "source_urls": [
+            "https://coag.gov/ai/"
+          ]
+        },
+        {
+          "date": "2026-10-26",
+          "event": "Formal rulemaking hearing and close of written comment period",
+          "status": "completed",
+          "source_urls": [
+            "https://coag.gov/ai/"
+          ]
+        },
+        {
+          "date": "2026-11-19",
+          "event": "Department adoption reported",
+          "status": "adopted_by_department_filing_pending",
+          "source_urls": [
+            "https://finance.yahoo.com/technology/ai/articles/colorado-adopted-admt-rules-final-164525368.html"
+          ]
+        },
+        {
+          "date": "2026-11-20",
+          "event": "Formal Attorney General opinion requested, as reported",
+          "status": "pending_opinion_and_filing",
+          "source_urls": [
+            "https://finance.yahoo.com/technology/ai/articles/colorado-adopted-admt-rules-final-164525368.html"
+          ]
+        }
+      ],
+      "summary": "The Colorado Department of Law proposed 4 CCR 904-6 to implement SB26-189 and HB26-1263. Its official rulemaking page documents the proposal and comment process. A November 21, 2026 secondary report states that the Department adopted rules on November 19, requested a formal Attorney General opinion on November 20, and that filing/publication remained pending. Treat the adopted text as not yet final or effective until confirmed in the official Secretary of State publication.",
+      "limitations": "The official Attorney General page retrieved for this record still describes the proposal and does not independently confirm the reported November 19 adoption or pending filing. The adoption and filing status are therefore explicitly marked secondary-reported. Recheck the Secretary of State eDocket and CCR before updating this status or describing the rules as final. The statutory effective dates are tracked separately in the enacted acts.",
+      "last_checked": "2026-11-22"
+    }
+  ]
+}
