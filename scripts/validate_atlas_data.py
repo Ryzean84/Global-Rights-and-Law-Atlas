@@ -40,6 +40,7 @@ def main() -> int:
         "jurisdiction": "jurisdiction-node.v0.1.schema.json",
         "anchor": "geographic-anchor.v0.1.schema.json",
         "institution": "institution.v0.1.schema.json",
+        "site": "site-catalog.v0.1.schema.json",
     }
     schemas = {}
     for kind, filename in schema_names.items():
@@ -113,9 +114,7 @@ def main() -> int:
         site = load_json(path)
         if not isinstance(site, dict):
             continue
-        for field in ("site_id", "anchor_id", "name", "jurisdiction_ids"):
-            if field not in site:
-                report(f"{path.relative_to(ROOT)}: missing required site field {field}")
+        validate_schema(site, schemas["site"], path)
         site_id = site.get("site_id")
         if isinstance(site_id, str):
             if site_id in sites:
