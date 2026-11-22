@@ -1,0 +1,59 @@
+{
+  "schema_version": "0.1.0",
+  "collection_id": "anchor-collection:colorado-civic-sites",
+  "description": "Initial Colorado civic discovery anchors. Each anchor points to legal jurisdictions and official site materials; the physical site does not define the full legal jurisdiction.",
+  "anchors": [
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:airport:US-DEN",
+      "name": "Denver International Airport",
+      "anchor_type": "international_airport",
+      "identifiers": [
+        { "scheme": "IATA", "value": "DEN" },
+        { "scheme": "ICAO", "value": "KDEN" }
+      ],
+      "jurisdiction_ids": ["jurisdiction:US", "jurisdiction:US-CO"],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "8500 Peña Blvd, Denver, CO 80249",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://www.flydenver.com/",
+        "https://www.flydenver.com/about-den/governance/rules-and-regulations/"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Airport rules and regulations are a distinct site-level rule collection. The airport is a discovery gateway, not a legal boundary."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:state-capitol:US-CO-DEN",
+      "name": "Colorado State Capitol",
+      "anchor_type": "state_capitol",
+      "identifiers": [],
+      "jurisdiction_ids": ["jurisdiction:US", "jurisdiction:US-CO"],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "200 E Colfax Ave, Denver, CO 80203",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn",
+        "https://content.leg.colorado.gov/content/tour-information",
+        "https://content.leg.colorado.gov/capitol-information"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Civic and legislative anchor. Visitor policies are separate from statewide statutes and regulations."
+    }
+  ],
+  "expansion_policy": {
+    "next_colorado_candidates": ["Denver City and County Building", "Colorado Supreme Court", "county courthouses", "municipal halls", "public libraries", "tribal government archives"],
+    "rule": "Add an anchor only with an authoritative site source and explicit jurisdiction references. Do not infer legal applicability from proximity."
+  }
+}
