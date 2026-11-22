@@ -79,12 +79,37 @@
       "last_verified": "2026-11-22",
       "verification_state": "source_checked",
       "notes": "Municipal civic anchor housing the Mayor's Office, City Council chambers, courtrooms, and other city offices. The Denver municipal jurisdiction record must be maintained separately from this site."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:government-office:US-CO-SECRETARY-OF-STATE-DEN",
+      "name": "Colorado Secretary of State Office",
+      "anchor_type": "government_office",
+      "identifiers": [],
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "1700 Broadway, Suite 550, Denver, CO 80290, USA",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://www.sos.state.co.us/",
+        "https://www.leg.colorado.gov/sites/default/files/visitor_brochure_for_web_accessible.pdf",
+        "https://www.sos.state.co.us/pubs/business/sampleForms/AMDRST_NPC.pdf"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The Colorado State Capitol visitor guide identifies the Secretary of State's office at 1700 Broadway. The Secretary of State's official business filing form gives the office address as 1700 Broadway, Suite 550. Verify office access and services before visiting."
     }
   ],
   "expansion_policy": {
     "next_colorado_candidates": [
-      "Colorado Secretary of State office",
-      "Colorado Attorney General / Department of Law",
+      "Colorado Attorney General / Department of Law (already associated with the Ralph L. Carr Judicial Center)",
       "county courthouses",
       "municipal halls",
       "public law libraries and archives",
