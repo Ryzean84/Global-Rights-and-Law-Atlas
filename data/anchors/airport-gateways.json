@@ -5,26 +5,59 @@
   "coordinate_reference_system": "WGS84",
   "anchors": [
     {
+      "schema_version": "0.1.0",
       "id": "anchor:airport:US-DEN",
       "name": "Denver International Airport",
       "anchor_type": "international_airport",
       "identifiers": [
-        { "scheme": "IATA", "value": "DEN" },
-        { "scheme": "ICAO", "value": "KDEN" }
+        {
+          "scheme": "IATA",
+          "value": "DEN"
+        },
+        {
+          "scheme": "ICAO",
+          "value": "KDEN"
+        }
       ],
-      "country_code": "US",
-      "admin_area_hint": "Colorado",
-      "jurisdiction_ids": ["jurisdiction:US", "jurisdiction:US-CO"],
-      "coordinates": null,
-      "coordinate_status": "not_yet_verified",
-      "source_urls": ["https://www.flydenver.com/"],
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "8500 Peña Blvd, Denver, CO 80249",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://www.flydenver.com/",
+        "https://www.flydenver.com/about-den/governance/rules-and-regulations/"
+      ],
       "last_verified": "2026-11-22",
-      "notes": "Colorado pilot gateway. Add verified WGS84 coordinates from an authoritative aviation or airport source before mapping."
+      "verification_state": "source_checked",
+      "notes": "Colorado pilot gateway. Add verified WGS84 coordinates from an authoritative aviation or airport source before mapping. Airport rules are a separate site-level collection."
     }
   ],
   "expansion_policy": {
     "initial_scope": "international_airport_gateways",
-    "future_anchor_types": ["seaport", "border_crossing", "city", "town", "county", "state_capitol", "courthouse", "library", "university", "community_archive", "tribal_government"],
+    "future_anchor_types": [
+      "seaport",
+      "border_crossing",
+      "city",
+      "town",
+      "county",
+      "state_capitol",
+      "national_capitol",
+      "parliament",
+      "judicial_center",
+      "courthouse",
+      "city_hall",
+      "library",
+      "university",
+      "community_archive",
+      "tribal_government"
+    ],
     "rule": "Every anchor references explicit jurisdiction IDs. Never infer legal jurisdiction solely from proximity, airport code, or coordinates."
   }
 }
