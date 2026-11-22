@@ -7,16 +7,20 @@ on:
       - "data/anchors/**/*.json"
       - "data/sites/**/*.json"
       - "schemas/**/*.json"
+      - "scripts/validate_atlas_data.py"
       - ".github/workflows/validate-atlas-data.yml"
   push:
     branches: [main]
     paths:
       - "data/jurisdictions/**/*.json"
+      - "data/anchors/**/*.json"
+      - "data/sites/**/*.json"
       - "schemas/**/*.json"
+      - "scripts/validate_atlas_data.py"
       - ".github/workflows/validate-atlas-data.yml"
 
 jobs:
-  validate-jurisdictions:
+  validate-atlas-data:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -26,53 +30,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install JSON Schema validator
-        run: python -m pip install jsonschema
-      - name: Validate jurisdiction records
-        run: |
-          python - <<'PY'
-          import json
-          from pathlib import Path
-          from jsonschema import Draft202012Validator, FormatChecker
-
-          schema_path = Path("schemas/jurisdiction-node.v0.1.schema.json")
-          schema = json.loads(schema_path.read_text(encoding="utf-8"))
-          Draft202012Validator.check_schema(schema)
-          validator = Draft202012Validator(schema, format_checker=FormatChecker())
-
-          records = sorted(Path("data/jurisdictions").rglob("*.json"))
-          if not records:
-              raise SystemExit("No jurisdiction JSON records found")
-
-          failed = False
-          for path in records:
-              instance = json.loads(path.read_text(encoding="utf-8"))
-              errors = sorted(validator.iter_errors(instance), key=lambda e: list(e.path))
-              if errors:
-                  failed = True
-                  for error in errors:
-                      location = ".".join(str(part) for part in error.path) or "<root>"
-                      print(f"{path}:{location}: {error.message}")
-              else:
-                  print(f"VALID: {path}")
-
-          anchor_schema = json.loads(Path("schemas/geographic-anchor.v0.1.schema.json").read_text(encoding="utf-8"))
-          Draft202012Validator.check_schema(anchor_schema)
-          anchor_validator = Draft202012Validator(anchor_schema, format_checker=FormatChecker())
-          for path in sorted(Path("data/anchors").rglob("*.json")):
-              payload = json.loads(path.read_text(encoding="utf-8"))
-              for anchor in payload.get("anchors", []):
-                  errors = list(anchor_validator.iter_errors(anchor))
-                  if errors:
-                      failed = True
-                      for error in errors:
-                          location = ".".join(str(part) for part in error.path) or "<root>"
-                          print(f"{path}:{location}: {error.message}")
-                  else:
-                      print(f"VALID ANCHOR: {path} :: {anchor.get('id')}")
-          for path in sorted(Path("data/sites").rglob("*.json")):
-              json.loads(path.read_text(encoding="utf-8"))
-              print(f"VALID JSON: {path}")
-
-          if failed:
-              raise SystemExit("Atlas data validation failed")
-          PY
+        run: python -m pip install "jsonschema>=4.23,<5"
+      - name: Validate Atlas registries and references
+        run: python scripts/validate_atlas_data.py
