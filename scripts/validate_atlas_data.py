@@ -42,6 +42,8 @@ def main() -> int:
         "institution": "institution.v0.1.schema.json",
         "site": "site-catalog.v0.1.schema.json",
         "legal_source": "legal-source.v0.2.schema.json",
+        "oversight": "oversight-record.v0.3.schema.json",
+        "government_ai": "government-ai-system.v0.3.schema.json",
     }
     schemas = {}
     for kind, filename in schema_names.items():
@@ -214,6 +216,8 @@ def main() -> int:
     print(f"VALID: {len(sites)} site catalog(s)")
     print(f"VALID: {len(institutions)} unique institution record(s) across {len(institution_files)} collection(s)")
     print(f"VALID: {len(legal_sources)} unique legal-source record(s) across {len(legal_source_files)} collection(s)")
+    print(f"VALID: {len(oversight_records)} unique oversight record(s) across {len(oversight_files)} collection(s)")
+    print(f"VALID: {len(government_ai_records)} government AI system record(s) across {len(government_ai_files)} collection(s)")
     print("All schema, uniqueness, parent, and cross-registry reference checks passed.")
     return 0
 
