@@ -184,9 +184,9 @@
       "legal_effect": "binding_law",
       "canonical_url": "https://www.leg.colorado.gov/laws/session-laws/HB26-1263/208/download",
       "language": "en",
-      "publication_date": "2026-06-01",
-      "effective_date": "2027-01-01",
-      "record_status": "enacted_not_yet_effective",
+      "publication_date": "2026-05-29",
+      "effective_date": "2026-08-12",
+      "record_status": "effective",
       "status_as_of": "2026-11-22",
       "last_checked": "2026-11-22",
       "institution_ids": [
@@ -196,8 +196,8 @@
       "verification_state": "source_checked",
       "bill_number": "HB26-1263",
       "chapter_number": 208,
-      "effective_date_notes": "The enacted bill page states that the act's operator requirements take effect January 1, 2027. The session-law listing shows Chapter 208 and a separate session-law publication/effective-date field; do not confuse that listing field with the act's substantive commencement date.",
-      "provenance_note": "The official enrolled session law is Chapter 208. The General Assembly bill page states that the act became law, identifies the signed act, and provides bill history. This record is an instrument pointer, not a legal interpretation."
+      "effective_date_notes": "The act itself took effect August 12, 2026 (the day after the 90-day period following final adjournment, absent a referendum petition). Do not mistake the act's general commencement for the commencement of each operator duty: the duties in subsections (2) through (5) apply on and after January 1, 2027; annual reporting under subsection (6) applies on and after July 1, 2027.",
+      "provenance_note": "The official enrolled session law is Chapter 208 and states that the act was approved May 29, 2026, with an overall effective date of August 12, 2026. Its substantive operator duties have later application dates, and annual reporting starts July 1, 2027. The General Assembly bill page supplies the bill history and summary. This record is an instrument pointer, not a legal interpretation."
     }
   ]
 }
