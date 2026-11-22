@@ -20,9 +20,10 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 - [Ralph L. Carr Judicial Center site catalog](data/sites/ralph-l-carr-judicial-center.json)
 - [Denver City and County Building site catalog](data/sites/denver-city-and-county-building.json)
 - [Colorado Secretary of State site catalog](data/sites/colorado-secretary-of-state.json)
+- [Colorado Office of the State Auditor site catalog](data/sites/colorado-office-of-state-auditor.json)
 - [Denver International Airport site catalog](data/sites/denver-international-airport.json)
 - [Colorado state-government institutions](data/institutions/colorado-state-government.json)
-- [Colorado judicial and legal institutions](data/institutions/colorado-judicial-and-legal.json)
+- [Colorado judicial and legal institutions](data/institutions/colorado-courts-and-oversight.json)
 - [Denver municipal institutions](data/institutions/denver-municipal-government.json)
 - [Geographic-anchor JSON Schema](schemas/geographic-anchor.v0.1.schema.json)
 - [Jurisdiction-node JSON Schema](schemas/jurisdiction-node.v0.1.schema.json)
@@ -55,6 +56,6 @@ Run the local validator with `python scripts/validate_atlas_data.py` after insta
 Git history, checksums, signatures, append-only event records, Merkle roots, and independent mirrors can make changes detectable. They do not prove a source is truthful, a legal interpretation is correct, a record is complete, or a law is fair. No cryptocurrency or single blockchain is required.
 
 ## Current maturity
-This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, five geographic anchors, five site catalogs, thirteen institution records, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
+This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, six geographic anchors, six site catalogs, fourteen institution records, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
 
 **Build locally. Connect globally. Preserve independently.**
