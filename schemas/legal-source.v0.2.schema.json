@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Ryzean84/Global-Rights-and-Law-Atlas/blob/main/schemas/legal-source.v0.2.schema.json",
+  "title": "Global Rights and Law Atlas legal-source record",
+  "description": "A provenance-aware pointer to an authoritative legal or official civic publication collection. A collection pointer is not an assertion that every item in it is current or binding.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "title",
+    "jurisdiction_id",
+    "issuing_authority",
+    "source_type",
+    "legal_effect",
+    "canonical_url",
+    "language",
+    "record_status",
+    "status_as_of",
+    "last_checked",
+    "institution_ids",
+    "verification_state",
+    "provenance_note"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.2.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^legal-source:[A-Za-z0-9._:-]+$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jurisdiction_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "issuing_authority": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_type": {
+      "enum": [
+        "constitution",
+        "statute_collection",
+        "session_laws",
+        "regulation_collection",
+        "court_opinion_collection",
+        "legislative_record_collection",
+        "audit_report_collection",
+        "other"
+      ]
+    },
+    "legal_effect": {
+      "enum": [
+        "binding_law_collection",
+        "official_record_collection",
+        "judicial_authority_collection",
+        "oversight_publication",
+        "reference_only",
+        "unknown"
+      ]
+    },
+    "canonical_url": {
+      "type": "string",
+      "format": "uri"
+    },
+    "language": {
+      "type": "string",
+      "pattern": "^[A-Za-z]{2,3}(-[A-Za-z0-9]{2,8})*$"
+    },
+    "publication_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "effective_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "record_status": {
+      "enum": [
+        "ongoing",
+        "current_collection",
+        "historical_archive",
+        "unknown"
+      ]
+    },
+    "status_as_of": {
+      "type": "string",
+      "format": "date"
+    },
+    "last_checked": {
+      "type": "string",
+      "format": "date"
+    },
+    "institution_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "verification_state": {
+      "enum": [
+        "draft",
+        "source_checked",
+        "reviewed"
+      ]
+    },
+    "provenance_note": {
+      "type": "string",
+      "minLength": 1
+    }
+  }
+}
