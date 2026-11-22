@@ -1,0 +1,64 @@
+{
+  "schema_version": "0.1.0",
+  "id": "jurisdiction:US-CO-DENVER",
+  "name": {
+    "en": "City and County of Denver"
+  },
+  "jurisdiction_type": "municipality",
+  "parent_jurisdiction_id": "jurisdiction:US-CO",
+  "identifiers": [],
+  "country_code": "US",
+  "languages": [
+    "en"
+  ],
+  "status": "active",
+  "sources": [
+    {
+      "id": "source:denver-city-charter",
+      "title": "Charter of the City and County of Denver",
+      "authority": "City and County of Denver, Clerk and Recorder",
+      "document_type": "municipal_charter",
+      "url": "https://www.denvergov.org/files/assets/public/v/1/city-council/documents/denvercitycharter.pdf",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "legal_status": "official_charter_reference",
+      "status_as_of": "2026-11-22",
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Official city-hosted charter PDF. Confirm amendments and current version against the Clerk and Recorder before relying on a specific provision."
+    },
+    {
+      "id": "source:denver-revised-municipal-code",
+      "title": "Denver Revised Municipal Code",
+      "authority": "City and County of Denver",
+      "document_type": "municipal_code_portal",
+      "url": "https://www.denvergov.org/Government/Legislation-and-Transparency",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "legal_status": "official_code_discovery_portal",
+      "status_as_of": "2026-11-22",
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "City portal for Denver Revised Municipal Code, ordinances, related documents, and public meetings. Confirm the current text and amendment history in the linked code service."
+    }
+  ],
+  "coverage": {
+    "areas": [
+      "municipal_charter",
+      "municipal_ordinances",
+      "municipal_government",
+      "public_records"
+    ],
+    "completeness": "starter_registry",
+    "known_gaps": [
+      "Municipal charter provisions not normalized",
+      "Denver Revised Municipal Code not indexed chapter by chapter",
+      "Ordinance history and effective dates not comprehensively indexed",
+      "Municipal rules and executive orders require separate catalogs"
+    ]
+  },
+  "last_reviewed": "2026-11-22",
+  "review_status": "starter_record_needs_expansion"
+}
