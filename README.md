@@ -12,6 +12,10 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 - [Contributing guide](CONTRIBUTING.md)
 - [Colorado pilot jurisdiction record](data/jurisdictions/us-co.json)
 - [Airport gateway anchor registry](data/anchors/airport-gateways.json)
+- [Colorado civic-site anchors](data/anchors/colorado-civic-sites.json)
+- [Denver International Airport rule catalog](data/sites/denver-international-airport.json)
+- [Colorado State Capitol visitor-policy catalog](data/sites/colorado-state-capitol.json)
+- [Geographic-anchor JSON Schema](schemas/geographic-anchor.v0.1.schema.json)
 - [Jurisdiction-node JSON Schema](schemas/jurisdiction-node.v0.1.schema.json)
 
 ## First pilot: Colorado
