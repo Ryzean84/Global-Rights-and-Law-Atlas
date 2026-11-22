@@ -25,6 +25,8 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 - [Colorado state-government institutions](data/institutions/colorado-state-government.json)
 - [Colorado judicial and legal institutions](data/institutions/colorado-courts-and-oversight.json)
 - [Denver municipal institutions](data/institutions/denver-municipal-government.json)
+- [Colorado official legal-source registry](data/legal-sources/colorado-official-portals.json)
+- [Legal-source JSON Schema](schemas/legal-source.v0.2.schema.json)
 - [Geographic-anchor JSON Schema](schemas/geographic-anchor.v0.1.schema.json)
 - [Jurisdiction-node JSON Schema](schemas/jurisdiction-node.v0.1.schema.json)
 - [Institution JSON Schema](schemas/institution.v0.1.schema.json)
@@ -32,7 +34,7 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 - [Atlas data validator](scripts/validate_atlas_data.py)
 
 ## First pilot: Colorado
-The starter source registry points to official materials for the Colorado Constitution, Colorado Revised Statutes, session laws, appellate opinions, and executive agency rules. It also identifies Colorado's 2026 automated decision-making legislation as a changing legal record whose bill history, enacted text, effective date, and rulemaking context must be retained.
+The Colorado legal-source registry now indexes official portals for the Colorado Constitution, Colorado Revised Statutes, session laws, the Code of Colorado Regulations, appellate opinions, legislative records, and public State Auditor reports. These are collection-level discovery pointers. Individual instruments still require their own records, including enactment or decision history, effective dates, publication status, and supersession relationships.
 
 The geographic pilot begins with the Colorado State Capitol, Ralph L. Carr Colorado Judicial Center, Denver City and County Building, and Denver International Airport. Each physical anchor is linked to explicit jurisdiction records and a separate site catalog. First-class institution records identify the government bodies and courts associated with those sites.
 
@@ -44,7 +46,7 @@ Capitols, legislatures, courts, city halls, agency offices, airports, ports, bor
 ## How contributions work
 1. Choose or propose a geographic anchor and identify the jurisdiction.
 2. Add or update an institution record and link it to one or more site records where appropriate.
-3. Add authoritative legal sources with authority, document type, dates, status, language, and URL.
+3. Add a legal-source collection pointer or individual instrument record with authority, source type, legal effect, dates, status, language, provenance, and URL.
 4. Preserve original-language material and record translations separately.
 5. Submit the structured contribution as a GitHub pull request.
 6. Automated checks validate schemas, identifiers, and bidirectional cross-registry references; people review authority, accuracy, rights, privacy, and context.
@@ -56,6 +58,6 @@ Run the local validator with `python scripts/validate_atlas_data.py` after insta
 Git history, checksums, signatures, append-only event records, Merkle roots, and independent mirrors can make changes detectable. They do not prove a source is truthful, a legal interpretation is correct, a record is complete, or a law is fair. No cryptocurrency or single blockchain is required.
 
 ## Current maturity
-This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, six geographic anchors, six site catalogs, fourteen institution records, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
+This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, six geographic anchors, six site catalogs, fourteen institution records, seven Colorado legal-source portal records, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
 
 **Build locally. Connect globally. Preserve independently.**
