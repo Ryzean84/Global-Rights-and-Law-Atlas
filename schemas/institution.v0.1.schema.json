@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/Ryzean84/Global-Rights-and-Law-Atlas/blob/main/schemas/institution.v0.1.schema.json",
   "title": "Global Rights and Law Atlas institution record",
-  "description": "A government body or civic institution associated with one or more physical sites and legal jurisdictions.",
+  "description": "A government body or civic institution associated with one or more legal jurisdictions and, where verified, one or more physical sites.",
   "type": "object",
   "additionalProperties": false,
   "required": [
@@ -53,7 +53,7 @@
     },
     "site_ids": {
       "type": "array",
-      "minItems": 1,
+      "minItems": 0,
       "uniqueItems": true,
       "items": {
         "type": "string"
