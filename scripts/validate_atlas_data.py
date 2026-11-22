@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate Atlas jurisdiction, anchor, site, and institution registries."""
+"""Validate Atlas jurisdiction, anchor, site, institution, and legal-source registries."""
 from __future__ import annotations
 
 import json
@@ -41,6 +41,7 @@ def main() -> int:
         "anchor": "geographic-anchor.v0.1.schema.json",
         "institution": "institution.v0.1.schema.json",
         "site": "site-catalog.v0.1.schema.json",
+        "legal_source": "legal-source.v0.2.schema.json",
     }
     schemas = {}
     for kind, filename in schema_names.items():
@@ -178,6 +179,7 @@ def main() -> int:
     print(f"VALID: {len(anchors)} unique geographic anchor(s) across {len(anchor_files)} collection(s)")
     print(f"VALID: {len(sites)} site catalog(s)")
     print(f"VALID: {len(institutions)} unique institution record(s) across {len(institution_files)} collection(s)")
+    print(f"VALID: {len(legal_sources)} unique legal-source record(s) across {len(legal_source_files)} collection(s)")
     print("All schema, uniqueness, parent, and cross-registry reference checks passed.")
     return 0
 
