@@ -5,40 +5,165 @@
   "description": "A physical or civic discovery point linked to explicit legal jurisdictions. It is not itself a jurisdiction.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["schema_version", "id", "name", "anchor_type", "jurisdiction_ids", "location", "source_urls", "last_verified", "verification_state"],
+  "required": [
+    "schema_version",
+    "id",
+    "name",
+    "anchor_type",
+    "jurisdiction_ids",
+    "location",
+    "source_urls",
+    "last_verified",
+    "verification_state"
+  ],
   "properties": {
-    "schema_version": { "const": "0.1.0" },
-    "id": { "type": "string", "pattern": "^anchor:[A-Za-z0-9._:-]+$" },
-    "name": { "type": "string", "minLength": 1 },
-    "anchor_type": { "enum": ["international_airport", "airport", "seaport", "border_crossing", "state_capitol", "national_capitol", "parliament", "city_hall", "courthouse", "tribal_government", "library", "university", "community_archive", "other"] },
-    "identifiers": { "type": "array", "items": { "type": "object", "required": ["scheme", "value"], "properties": { "scheme": { "type": "string" }, "value": { "type": "string" } }, "additionalProperties": false } },
-    "jurisdiction_ids": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string" } },
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^anchor:[A-Za-z0-9._:-]+$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "anchor_type": {
+      "enum": [
+        "international_airport",
+        "airport",
+        "seaport",
+        "border_crossing",
+        "state_capitol",
+        "national_capitol",
+        "parliament",
+        "city_hall",
+        "courthouse",
+        "tribal_government",
+        "library",
+        "university",
+        "community_archive",
+        "other",
+        "judicial_center"
+      ]
+    },
+    "identifiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "scheme",
+          "value"
+        ],
+        "properties": {
+          "scheme": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "jurisdiction_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
     "location": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["country_code", "admin_area"],
+      "required": [
+        "country_code",
+        "admin_area"
+      ],
       "properties": {
-        "country_code": { "type": "string", "pattern": "^[A-Z]{2}$" },
-        "admin_area": { "type": ["string", "null"] },
-        "locality": { "type": ["string", "null"] },
-        "address": { "type": ["string", "null"] },
+        "country_code": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "admin_area": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "locality": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "address": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
         "coordinates": {
-          "type": ["object", "null"],
+          "type": [
+            "object",
+            "null"
+          ],
           "additionalProperties": false,
-          "required": ["latitude", "longitude", "crs", "source_url", "verified_date"],
+          "required": [
+            "latitude",
+            "longitude",
+            "crs",
+            "source_url",
+            "verified_date"
+          ],
           "properties": {
-            "latitude": { "type": "number", "minimum": -90, "maximum": 90 },
-            "longitude": { "type": "number", "minimum": -180, "maximum": 180 },
-            "crs": { "const": "WGS84" },
-            "source_url": { "type": "string", "format": "uri" },
-            "verified_date": { "type": "string", "format": "date" }
+            "latitude": {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            },
+            "longitude": {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            "crs": {
+              "const": "WGS84"
+            },
+            "source_url": {
+              "type": "string",
+              "format": "uri"
+            },
+            "verified_date": {
+              "type": "string",
+              "format": "date"
+            }
           }
         }
       }
     },
-    "source_urls": { "type": "array", "items": { "type": "string", "format": "uri" } },
-    "last_verified": { "type": "string", "format": "date" },
-    "verification_state": { "enum": ["draft", "source_checked", "location_checked", "reviewed"] },
-    "notes": { "type": "string" }
+    "source_urls": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "format": "uri"
+      }
+    },
+    "last_verified": {
+      "type": "string",
+      "format": "date"
+    },
+    "verification_state": {
+      "enum": [
+        "draft",
+        "source_checked",
+        "location_checked",
+        "reviewed"
+      ]
+    },
+    "notes": {
+      "type": "string"
+    }
   }
 }
