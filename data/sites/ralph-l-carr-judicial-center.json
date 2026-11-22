@@ -30,23 +30,6 @@
       "scope": "Intermediate appellate court information, jurisdiction, public oral arguments, opinions, and public access information"
     }
   ],
-  "institutions": [
-    {
-      "name": "Colorado Supreme Court",
-      "role": "State court of last resort",
-      "source_url": "https://www.coloradojudicial.gov/supreme-court"
-    },
-    {
-      "name": "Colorado Court of Appeals",
-      "role": "Intermediate appellate court",
-      "source_url": "https://www.coloradojudicial.gov/court-appeals?language=en"
-    },
-    {
-      "name": "Colorado Attorney General / Department of Law",
-      "role": "State legal office and executive-branch counsel",
-      "source_url": "https://coag.gov/about-us/"
-    }
-  ],
   "public_access_topics": [
     "public appellate oral arguments",
     "court schedules and closures",
