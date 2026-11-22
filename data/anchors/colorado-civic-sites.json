@@ -105,11 +105,35 @@
       "last_verified": "2026-11-22",
       "verification_state": "source_checked",
       "notes": "The Colorado State Capitol visitor guide identifies the Secretary of State's office at 1700 Broadway. The Secretary of State's official business filing form gives the office address as 1700 Broadway, Suite 550. Verify office access and services before visiting."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:government-office:US-CO-STATE-AUDITOR-DEN",
+      "name": "Colorado Office of the State Auditor",
+      "anchor_type": "government_office",
+      "identifiers": [],
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "1375 Sherman St, 5th Floor, Denver, CO 80203-2246, USA",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://content.leg.colorado.gov/agencies/office-of-the-state-auditor",
+        "https://content.leg.colorado.gov/agencies/office-state-auditor/about-us"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The Colorado General Assembly identifies the Office of the State Auditor at the Capitol Annex. The OSA describes itself as an independent, nonpartisan Legislative Branch agency. Do not confuse its primary office with its separate local-government audit contact."
     }
   ],
   "expansion_policy": {
     "next_colorado_candidates": [
-      "Colorado Attorney General / Department of Law (already associated with the Ralph L. Carr Judicial Center)",
       "county courthouses",
       "municipal halls",
       "public law libraries and archives",
