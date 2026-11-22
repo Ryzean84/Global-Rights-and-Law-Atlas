@@ -1,0 +1,121 @@
+{
+  "schema_version": "0.1.0",
+  "collection_id": "institution-collection:colorado-state-government",
+  "description": "Starter registry of Colorado legislative and executive institutions associated with the Colorado State Capitol.",
+  "institutions": [
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-GENERAL-ASSEMBLY",
+      "name": "Colorado General Assembly",
+      "institution_type": "legislature",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Colorado's bicameral state legislature, composed of the Senate and House of Representatives."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-SENATE",
+      "name": "Colorado Senate",
+      "institution_type": "legislative_chamber",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Upper chamber of the Colorado General Assembly; listed by the General Assembly among the institutions housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-HOUSE",
+      "name": "Colorado House of Representatives",
+      "institution_type": "legislative_chamber",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Lower chamber of the Colorado General Assembly; listed by the General Assembly among the institutions housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-GOVERNOR",
+      "name": "Office of the Governor of Colorado",
+      "institution_type": "executive_office",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The General Assembly's Capitol visitor information identifies the Governor's Office as housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-LIEUTENANT-GOVERNOR",
+      "name": "Office of the Lieutenant Governor of Colorado",
+      "institution_type": "executive_office",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The General Assembly's Capitol visitor information identifies the Lieutenant Governor's Office as housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-TREASURY",
+      "name": "Colorado Department of the Treasury",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The General Assembly's Capitol visitor information identifies the Department of the Treasury as housed in the Capitol."
+    }
+  ]
+}
