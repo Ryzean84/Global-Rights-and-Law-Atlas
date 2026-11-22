@@ -60,6 +60,26 @@
       "last_verified": "2026-11-22",
       "verification_state": "source_checked",
       "notes": "The Attorney General's official page identifies the office at the Ralph L. Carr Colorado Judicial Center, 1300 Broadway, Denver. Its executive-branch legal functions are distinct from the courts sharing the campus."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-STATE-AUDITOR",
+      "name": "Colorado Office of the State Auditor",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-STATE-AUDITOR"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/agencies/office-of-the-state-auditor",
+        "https://content.leg.colorado.gov/agencies/office-state-auditor/about-us"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Independent, nonpartisan agency in the Colorado Legislative Branch. The State Auditor conducts performance, financial, and IT audits under constitutional and statutory authority; the office is not part of the executive branch."
     }
   ]
 }
