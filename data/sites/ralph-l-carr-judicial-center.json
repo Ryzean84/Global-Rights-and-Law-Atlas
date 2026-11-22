@@ -55,5 +55,10 @@
   ],
   "last_verified": "2026-11-22",
   "verification_state": "official_information_sources_checked",
-  "notes": "Institutional occupants and functions are recorded separately from the building's physical anchor. Confirm current access, office locations, and schedules with each authority."
+  "notes": "Institutional occupants and functions are recorded separately from the building's physical anchor. Confirm current access, office locations, and schedules with each authority.",
+  "institution_ids": [
+    "institution:US-CO-SUPREME-COURT",
+    "institution:US-CO-COURT-OF-APPEALS",
+    "institution:US-CO-ATTORNEY-GENERAL"
+  ]
 }
