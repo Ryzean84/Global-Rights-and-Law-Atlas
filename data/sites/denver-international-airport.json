@@ -4,7 +4,10 @@
   "anchor_id": "anchor:airport:US-DEN",
   "name": "Denver International Airport",
   "operator_or_authority": "City and County of Denver, Department of Aviation",
-  "jurisdiction_ids": ["jurisdiction:US", "jurisdiction:US-CO"],
+  "jurisdiction_ids": [
+    "jurisdiction:US",
+    "jurisdiction:US-CO"
+  ],
   "rule_collections": [
     {
       "id": "rules:den-airport-system",
@@ -15,31 +18,106 @@
       "status": "official_rules_portal",
       "last_verified": "2026-11-22",
       "parts": [
-        { "part": "00", "topic": "Foreword" },
-        { "part": "10", "topic": "Definitions" },
-        { "part": "15", "topic": "Administrative Citations" },
-        { "part": "20", "topic": "Security" },
-        { "part": "30", "topic": "Conduct of Persons Using the Airport" },
-        { "part": "35", "topic": "Operations Infraction Accountability Program" },
-        { "part": "40", "topic": "Conduct of Commercial Operators Using the Airport" },
-        { "part": "47", "topic": "Consumption of Takeout Alcoholic Beverages" },
-        { "part": "50", "topic": "Leafleting and Solicitations" },
-        { "part": "80", "topic": "Parking" },
-        { "part": "90", "topic": "Taxicabs" },
-        { "part": "100", "topic": "Commercial Transportation Regulations" },
-        { "part": "110", "topic": "Curbside Operations" },
-        { "part": "120", "topic": "Rates and Charges" },
-        { "part": "125", "topic": "Customer Facility Charge — Rental Cars" },
-        { "part": "130", "topic": "Operating Vehicles in the Secured Area" },
-        { "part": "140", "topic": "Operation of Aircraft" },
-        { "part": "145", "topic": "Unmanned Aircraft System Operations" },
-        { "part": "160", "topic": "Operation and Control of Concourse Gates" },
-        { "part": "180", "topic": "Environmental Management" },
-        { "part": "190", "topic": "Aircraft Deicing Regulations" },
-        { "part": "210", "topic": "Noise Abatement and Runway Procedures" },
-        { "part": "220", "topic": "Open Records Act Request" },
-        { "part": "230", "topic": "Minimum Insurance Requirements and Assumption of Risk" },
-        { "part": "250", "topic": "Rules Governing Hearings Before the Chief Executive Officer of Denver International Airport" }
+        {
+          "part": "00",
+          "topic": "Foreword"
+        },
+        {
+          "part": "10",
+          "topic": "Definitions"
+        },
+        {
+          "part": "15",
+          "topic": "Administrative Citations"
+        },
+        {
+          "part": "20",
+          "topic": "Security"
+        },
+        {
+          "part": "30",
+          "topic": "Conduct of Persons Using the Airport"
+        },
+        {
+          "part": "35",
+          "topic": "Operations Infraction Accountability Program"
+        },
+        {
+          "part": "40",
+          "topic": "Conduct of Commercial Operators Using the Airport"
+        },
+        {
+          "part": "47",
+          "topic": "Consumption of Takeout Alcoholic Beverages"
+        },
+        {
+          "part": "50",
+          "topic": "Leafleting and Solicitations"
+        },
+        {
+          "part": "80",
+          "topic": "Parking"
+        },
+        {
+          "part": "90",
+          "topic": "Taxicabs"
+        },
+        {
+          "part": "100",
+          "topic": "Commercial Transportation Regulations"
+        },
+        {
+          "part": "110",
+          "topic": "Curbside Operations"
+        },
+        {
+          "part": "120",
+          "topic": "Rates and Charges"
+        },
+        {
+          "part": "125",
+          "topic": "Customer Facility Charge — Rental Cars"
+        },
+        {
+          "part": "130",
+          "topic": "Operating Vehicles in the Secured Area"
+        },
+        {
+          "part": "140",
+          "topic": "Operation of Aircraft"
+        },
+        {
+          "part": "145",
+          "topic": "Unmanned Aircraft System Operations"
+        },
+        {
+          "part": "160",
+          "topic": "Operation and Control of Concourse Gates"
+        },
+        {
+          "part": "180",
+          "topic": "Environmental Management"
+        },
+        {
+          "part": "190",
+          "topic": "Aircraft Deicing Regulations"
+        },
+        {
+          "part": "210",
+          "topic": "Noise Abatement and Runway Procedures"
+        },
+        {
+          "part": "220",
+          "topic": "Open Records Act Request"
+        },
+        {
+          "part": "230",
+          "topic": "Minimum Insurance Requirements and Assumption of Risk"
+        },
+        {
+          "part": "250",
+          "topic": "Rules Governing Hearings Before the Chief Executive Officer of Denver International Airport"
+        }
       ],
       "notes": "The official airport site says the Denver Clerk and Recorder is custodian of official copies. Use the official index to retrieve current PDFs and verify revision dates. This index does not reproduce the full rules."
     },
@@ -78,5 +156,7 @@
       "url": "https://www.faa.gov/"
     }
   ],
-  "scope_warning": "Airport operator rules, municipal ordinances, Colorado law, federal law, TSA requirements, FAA regulations, lease conditions, and posted notices are distinct sources. This record is not a complete list of every rule applicable at DEN and is not legal advice."
+  "scope_warning": "Airport operator rules, municipal ordinances, Colorado law, federal law, TSA requirements, FAA regulations, lease conditions, and posted notices are distinct sources. This record is not a complete list of every rule applicable at DEN and is not legal advice.",
+  "last_verified": "2026-11-22",
+  "verification_state": "official_information_sources_checked"
 }
