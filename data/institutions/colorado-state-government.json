@@ -116,6 +116,26 @@
       "last_verified": "2026-11-22",
       "verification_state": "source_checked",
       "notes": "The General Assembly's Capitol visitor information identifies the Department of the Treasury as housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-SECRETARY-OF-STATE",
+      "name": "Colorado Secretary of State",
+      "institution_type": "election_authority",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-SECRETARY-OF-STATE"
+      ],
+      "source_urls": [
+        "https://www.sos.state.co.us/",
+        "https://www.leg.colorado.gov/sites/default/files/visitor_brochure_for_web_accessible.pdf"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Statewide elected executive office responsible for election administration and other statutory public services. The official Capitol visitor guide identifies its office at 1700 Broadway, not inside the Capitol."
     }
   ]
 }
