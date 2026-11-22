@@ -1,0 +1,58 @@
+name: Validate Atlas data
+
+on:
+  pull_request:
+    paths:
+      - "data/jurisdictions/**/*.json"
+      - "schemas/**/*.json"
+      - ".github/workflows/validate-atlas-data.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/jurisdictions/**/*.json"
+      - "schemas/**/*.json"
+      - ".github/workflows/validate-atlas-data.yml"
+
+jobs:
+  validate-jurisdictions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install JSON Schema validator
+        run: python -m pip install jsonschema
+      - name: Validate jurisdiction records
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          from jsonschema import Draft202012Validator, FormatChecker
+
+          schema_path = Path("schemas/jurisdiction-node.v0.1.schema.json")
+          schema = json.loads(schema_path.read_text(encoding="utf-8"))
+          Draft202012Validator.check_schema(schema)
+          validator = Draft202012Validator(schema, format_checker=FormatChecker())
+
+          records = sorted(Path("data/jurisdictions").rglob("*.json"))
+          if not records:
+              raise SystemExit("No jurisdiction JSON records found")
+
+          failed = False
+          for path in records:
+              instance = json.loads(path.read_text(encoding="utf-8"))
+              errors = sorted(validator.iter_errors(instance), key=lambda e: list(e.path))
+              if errors:
+                  failed = True
+                  for error in errors:
+                      location = ".".join(str(part) for part in error.path) or "<root>"
+                      print(f"{path}:{location}: {error.message}")
+              else:
+                  print(f"VALID: {path}")
+
+          if failed:
+              raise SystemExit("Atlas data validation failed")
+          PY
