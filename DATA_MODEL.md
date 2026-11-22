@@ -1,7 +1,7 @@
 # Data Model and Geographic Anchors — v0.1
 
 ## Design goals
-The model is jurisdiction-aware, source-first, multilingual, versioned, interoperable, and simple enough for GitHub pull requests. Machine-readable contracts are provided for [jurisdictions](schemas/jurisdiction-node.v0.1.schema.json), [geographic anchors](schemas/geographic-anchor.v0.1.schema.json), and [institutions](schemas/institution.v0.1.schema.json).
+The model is jurisdiction-aware, source-first, multilingual, versioned, interoperable, and simple enough for GitHub pull requests. Machine-readable contracts are provided for [jurisdictions](schemas/jurisdiction-node.v0.1.schema.json), [geographic anchors](schemas/geographic-anchor.v0.1.schema.json), [institutions](schemas/institution.v0.1.schema.json), and [site catalogs](schemas/site-catalog.v0.1.schema.json).
 
 ## Keep six concepts separate
 
