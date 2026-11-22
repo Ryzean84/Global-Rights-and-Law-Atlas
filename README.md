@@ -9,6 +9,7 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 ## Start here
 - [Project charter](CHARTER.md)
 - [Data and geographic anchor model](DATA_MODEL.md)
+- [Civic anchor expansion roadmap](docs/CIVIC_ANCHOR_EXPANSION_ROADMAP.md)
 - [Contributing guide](CONTRIBUTING.md)
 - [United States jurisdiction record](data/jurisdictions/us.json)
 - [Colorado jurisdiction record](data/jurisdictions/us-co.json)
