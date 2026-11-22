@@ -28,6 +28,7 @@ The v0.1 anchor contract includes:
 - Legislative: state capitol, national capitol, parliament.
 - Judicial: courthouse, judicial center.
 - Municipal: city hall.
+- Executive and civic services: government office.
 - Geographic gateway: airport, seaport, border crossing.
 - Knowledge and public memory: library, university, community archive.
 - Sovereign and other civic institutions: tribal government, other.
