@@ -30,6 +30,7 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 - [Colorado public accountability records](data/oversight/colorado-accountability.json)
 - [Oversight-record JSON Schema](schemas/oversight-record.v0.3.schema.json)
 - [Colorado government AI inventory](data/government-ai/colorado-state-inventory.json)
+- [Colorado government AI discovery and evidence notes](docs/GOVERNMENT_AI_DISCOVERY.md)
 - [Government AI system JSON Schema](schemas/government-ai-system.v0.3.schema.json)
 - [Geographic-anchor JSON Schema](schemas/geographic-anchor.v0.1.schema.json)
 - [Jurisdiction-node JSON Schema](schemas/jurisdiction-node.v0.1.schema.json)
@@ -38,7 +39,7 @@ The Atlas makes primary sources and their histories easier to discover, compare,
 - [Atlas data validator](scripts/validate_atlas_data.py)
 
 ## First pilot: Colorado
-The Colorado legal-source registry indexes seven official publication portals and two individual 2026 enacted AI laws: SB26-189 (Automated Decision-Making Technology, Chapter 131) and HB26-1263 (Conversational Artificial Intelligence Service Operator Requirements, Chapter 208). The accountability layer adds the State Auditor's public Cybersecurity Resiliency IT audit listing and a 4 CCR 904-6 rulemaking tracker whose adoption and filing status is explicitly qualified by its evidence sources. The initial government AI inventory is intentionally empty until individual deployments can be documented from public evidence; this is a research gap, not a claim that no public-sector AI systems exist.
+The Colorado legal-source registry indexes seven official publication portals and two individual 2026 enacted AI laws: SB26-189 (Automated Decision-Making Technology, Chapter 131) and HB26-1263 (Conversational Artificial Intelligence Service Operator Requirements, Chapter 208). The accountability layer adds the State Auditor's public Cybersecurity Resiliency IT audit listing and a 4 CCR 904-6 rulemaking tracker whose adoption and filing status is explicitly qualified by its evidence sources. The government AI inventory now contains six source-checked records transcribed from Colorado OIT's public GenAI Projects document and its AI Inventory presented to the Joint Technology Committee on December 16, 2025. Records distinguish production systems, pilots, and planned projects; source-reported status is not an independent audit. The discovery notes identify the underlying evidence and remaining verification work.
 
 The geographic pilot begins with the Colorado State Capitol, Ralph L. Carr Colorado Judicial Center, Denver City and County Building, and Denver International Airport. Each physical anchor is linked to explicit jurisdiction records and a separate site catalog. First-class institution records identify the government bodies and courts associated with those sites.
 
@@ -62,6 +63,6 @@ Run the local validator with `python scripts/validate_atlas_data.py` after insta
 Git history, checksums, signatures, append-only event records, Merkle roots, and independent mirrors can make changes detectable. They do not prove a source is truthful, a legal interpretation is correct, a record is complete, or a law is fair. No cryptocurrency or single blockchain is required.
 
 ## Current maturity
-This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, six geographic anchors, six site catalogs, fourteen institution records, nine Colorado legal-source records (seven portals and two enacted acts), two oversight records, an evidence-first government AI inventory awaiting verified system entries, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
+This repository contains foundational documentation, starter United States / Colorado / Denver jurisdiction records, six geographic anchors, six site catalogs, twenty institution records, nine Colorado legal-source records (seven portals and two enacted acts), two oversight records, an evidence-first government AI inventory with six source-checked agency records, versioned JSON Schemas, and automated cross-registry validation. It is not yet a complete legal database, interactive map, legal-advice service, blockchain, or production federation network.
 
 **Build locally. Connect globally. Preserve independently.**
