@@ -1,0 +1,45 @@
+{
+  "schema_version": "0.1.0",
+  "site_id": "site:US-CO-DENVER-CITY-HALL",
+  "anchor_id": "anchor:city-hall:US-CO-DEN",
+  "name": "Denver City and County Building",
+  "operator_or_authority": "City and County of Denver",
+  "jurisdiction_ids": [
+    "jurisdiction:US",
+    "jurisdiction:US-CO",
+    "jurisdiction:US-CO-DENVER"
+  ],
+  "official_information_sources": [
+    {
+      "title": "City and County Building",
+      "url": "https://www.denvergov.org/Community/Parks-and-Public-Spaces/City-Venues-and-Buildings/City-and-County-Building",
+      "scope": "Official building location, offices, public access, and building information"
+    },
+    {
+      "title": "How City Government Works",
+      "url": "https://www.denvergov.org/Government/Legislation-and-Transparency/How-City-Government-Works",
+      "scope": "Mayor, City Council, municipal government structure, and legislative authority"
+    },
+    {
+      "title": "Legislation and Transparency",
+      "url": "https://www.denvergov.org/Government/Legislation-and-Transparency",
+      "scope": "Denver Revised Municipal Code, ordinances, agendas, minutes, public meetings, and transparency resources"
+    }
+  ],
+  "institutional_functions": [
+    "Mayor's Office",
+    "Denver City Council",
+    "municipal and county courtrooms",
+    "city departments and public services"
+  ],
+  "public_access_topics": [
+    "public meetings and agendas",
+    "municipal ordinances",
+    "city charter",
+    "public records",
+    "building access and security"
+  ],
+  "last_verified": "2026-11-22",
+  "verification_state": "official_information_sources_checked",
+  "notes": "The City and County Building is a municipal civic anchor. Its physical location does not itself define the complete territorial or subject-matter scope of Denver law."
+}
