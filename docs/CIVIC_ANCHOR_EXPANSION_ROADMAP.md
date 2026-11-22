@@ -15,6 +15,7 @@ A map pin is a discovery aid, not a legal conclusion. Physical proximity never e
 - Ralph L. Carr Colorado Judicial Center
 - Denver City and County Building
 - Colorado Secretary of State office
+- Colorado Office of the State Auditor (independent, nonpartisan Legislative Branch agency)
 - Denver International Airport as a geographic gateway
 - United States, Colorado, and Denver starter jurisdiction records
 - Versioned jurisdiction, anchor, and institution contracts
