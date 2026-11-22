@@ -1,12 +1,21 @@
 {
   "schema_version": "0.1.0",
   "id": "jurisdiction:US-CO",
-  "name": { "en": "Colorado" },
+  "name": {
+    "en": "Colorado"
+  },
   "jurisdiction_type": "state",
   "parent_jurisdiction_id": "jurisdiction:US",
-  "identifiers": [{ "scheme": "ISO-3166-2", "value": "US-CO" }],
+  "identifiers": [
+    {
+      "scheme": "ISO-3166-2",
+      "value": "US-CO"
+    }
+  ],
   "country_code": "US",
-  "languages": ["en"],
+  "languages": [
+    "en"
+  ],
   "status": "active",
   "sources": [
     {
@@ -33,11 +42,11 @@
       "language": "en",
       "publication_date": "2026-05-14",
       "effective_date": "2027-01-01",
-      "legal_status": "enacted_not_yet_effective",
+      "legal_status": "enacted_mixed_effective_dates",
       "status_as_of": "2026-11-22",
       "last_verified": "2026-11-22",
-      "verification_state": "source_checked",
-      "notes": "The legislature page identifies this measure as law and lists its signed act and bill history. Verify enacted text and subsequent rulemaking before relying on individual requirements."
+      "verification_state": "status_checked",
+      "notes": "Official bill page records Governor signature on 2026-05-14 and Session Laws chapter 131. The act has mixed commencement: specified deployer-disclosure, consumer-rights, and Attorney General enforcement provisions take effect upon signature; other sections take effect 2027-01-01. Consult the signed act for section-specific commencement and applicability. This record is a discovery aid, not a legal interpretation."
     },
     {
       "id": "source:colorado-ag-ai-rulemaking",
@@ -56,7 +65,16 @@
     }
   ],
   "coverage": {
-    "areas": ["constitution", "statutes", "session_laws", "legislative_history", "appellate_opinions", "administrative_regulations", "artificial_intelligence", "digital_rights"],
+    "areas": [
+      "constitution",
+      "statutes",
+      "session_laws",
+      "legislative_history",
+      "appellate_opinions",
+      "administrative_regulations",
+      "artificial_intelligence",
+      "digital_rights"
+    ],
     "completeness": "starter_registry",
     "known_gaps": [
       "Constitutional text and amendment history not yet normalized",
