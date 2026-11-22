@@ -1,0 +1,85 @@
+{
+  "schema_version": "0.1.0",
+  "collection_id": "institution-collection:colorado-courts-and-oversight",
+  "description": "Starter registry of Colorado appellate courts, the Attorney General's Office, and the independent Office of the State Auditor.",
+  "institutions": [
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-SUPREME-COURT",
+      "name": "Colorado Supreme Court",
+      "institution_type": "court",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-RALPH-CARR"
+      ],
+      "source_urls": [
+        "https://www.coloradojudicial.gov/supreme-court",
+        "https://www.coloradojudicial.gov/location/ralph-l-carr-judicial-center?language=en"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Colorado's court of last resort, located at the Ralph L. Carr Judicial Center."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-COURT-OF-APPEALS",
+      "name": "Colorado Court of Appeals",
+      "institution_type": "court",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-RALPH-CARR"
+      ],
+      "source_urls": [
+        "https://www.coloradojudicial.gov/court-appeals?language=en"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Colorado's intermediate appellate court; public oral arguments are held at the Ralph L. Carr Judicial Center unless remote proceedings are ordered."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-ATTORNEY-GENERAL",
+      "name": "Colorado Attorney General / Department of Law",
+      "institution_type": "executive_office",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-RALPH-CARR"
+      ],
+      "source_urls": [
+        "https://coag.gov/about-us/"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The Attorney General's official page identifies the office at the Ralph L. Carr Colorado Judicial Center, 1300 Broadway, Denver. Its executive-branch legal functions are distinct from the courts sharing the campus."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-STATE-AUDITOR",
+      "name": "Colorado Office of the State Auditor",
+      "institution_type": "state_agency",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-STATE-AUDITOR"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/agencies/office-of-the-state-auditor",
+        "https://content.leg.colorado.gov/agencies/office-state-auditor/about-us"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Independent, nonpartisan agency in the Colorado Legislative Branch. The State Auditor conducts performance, financial, and IT audits under constitutional and statutory authority; the office is not part of the executive branch."
+    }
+  ]
+}
