@@ -23,6 +23,11 @@
       "title": "Colorado Attorney General — About the Office",
       "url": "https://coag.gov/about-us/",
       "scope": "Department of Law authority, responsibilities, and office location"
+    },
+    {
+      "title": "Colorado Court of Appeals",
+      "url": "https://www.coloradojudicial.gov/court-appeals?language=en",
+      "scope": "Intermediate appellate court information, jurisdiction, public oral arguments, opinions, and public access information"
     }
   ],
   "institutions": [
@@ -34,7 +39,7 @@
     {
       "name": "Colorado Court of Appeals",
       "role": "Intermediate appellate court",
-      "source_url": "https://www.coloradojudicial.gov/courts/court-of-appeals"
+      "source_url": "https://www.coloradojudicial.gov/court-appeals?language=en"
     },
     {
       "name": "Colorado Attorney General / Department of Law",
