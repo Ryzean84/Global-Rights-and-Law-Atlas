@@ -1,18 +1,18 @@
 # Data Model and Geographic Anchors — v0.1
 
 ## Design goals
-The model is jurisdiction-aware, source-first, multilingual, versioned, interoperable, and simple enough for GitHub pull requests. The machine-readable contracts are the [jurisdiction-node JSON Schema](schemas/jurisdiction-node.v0.1.schema.json) and [geographic-anchor JSON Schema](schemas/geographic-anchor.v0.1.schema.json).
+The model is jurisdiction-aware, source-first, multilingual, versioned, interoperable, and simple enough for GitHub pull requests. Machine-readable contracts are provided for [jurisdictions](schemas/jurisdiction-node.v0.1.schema.json), [geographic anchors](schemas/geographic-anchor.v0.1.schema.json), and [institutions](schemas/institution.v0.1.schema.json).
 
-## Keep five concepts separate
+## Keep six concepts separate
 
 ### Geographic anchor
 A physical discovery point or named site: state capitol, national capitol, parliament, courthouse, judicial center, city hall, airport, seaport, border crossing, library, university, or community archive. An anchor is not a jurisdiction and may be associated with several jurisdictions.
 
 ### Institution
-A government body or civic organization that exercises a defined function: legislature, court, executive office, election authority, regulator, records office, public library, or archive. Institutions are not interchangeable with their buildings. Several institutions may share a campus; one institution may occupy multiple sites.
+A government body or civic organization that exercises a defined function: legislature, legislative chamber, court, executive office, election authority, regulator, records office, public library, or archive. Institutions are not interchangeable with their buildings. Several institutions may share a campus; one institution may occupy multiple sites. Each institution has a stable ID, type, jurisdiction links, site links, authoritative source URLs, and a verification date.
 
 ### Site catalog
-A record about a particular physical site and its public-facing functions, official information, access policies, and relevant rule collections. Visitor guidance and building policies must not automatically be classified as statutes or regulations. Where an enforceable legal instrument exists, create a separate legal-source record.
+A record about a particular physical site and its public-facing functions, official information, access policies, and relevant rule collections. Site catalogs link to institution IDs, but visitor guidance and building policies must not automatically be classified as statutes or regulations. Where an enforceable legal instrument exists, create a separate legal-source record.
 
 ### Jurisdiction
 A legal authority or scope: country, state, province, territory, tribal nation, county, municipality, or supranational organization. Use stable identifiers and explicit parent/relationship metadata where appropriate. A jurisdiction's legal scope is not determined by the location of its capitol, courthouse, or agency office.
@@ -32,17 +32,18 @@ The v0.1 anchor contract includes:
 - Knowledge and public memory: library, university, community archive.
 - Sovereign and other civic institutions: tribal government, other.
 
-Add new controlled categories only when a real data need appears. Prefer a generic institution record over inventing a new physical anchor for every office inside the same building.
+Institution categories are separately controlled in the institution schema. Prefer a generic institution record over inventing a new physical anchor for every office inside the same building.
 
 ## Relationship rules
 1. Every anchor references one or more existing jurisdiction IDs.
 2. Every site catalog references an existing anchor ID and existing jurisdiction IDs.
-3. An anchor ID must be unique across all anchor collections.
-4. Jurisdiction parent IDs must resolve to an existing jurisdiction record.
-5. Physical proximity never establishes legal applicability.
-6. An institution may be associated with multiple sites; a site may host multiple institutions.
-7. Record the source and verification date for addresses, coordinates, and institutional facts.
-8. Coordinates use WGS84 decimal degrees and require a source and verification date. Leave coordinates null until verified.
+3. Every institution references one or more existing jurisdictions and one or more existing sites.
+4. Site-to-institution and institution-to-site links must agree in both directions.
+5. Anchor, site, jurisdiction, and institution IDs must be unique within their respective registries.
+6. Jurisdiction parent IDs must resolve to an existing jurisdiction record.
+7. Physical proximity never establishes legal applicability.
+8. Record the source and verification date for addresses, coordinates, and institutional facts.
+9. Coordinates use WGS84 decimal degrees and require a source and verification date. Leave coordinates null until verified.
 
 ## Required source metadata
 Each legal source should have a unique ID, source-language title, jurisdiction ID, issuing authority, document type, canonical URL, language tag, publication/adoption date, effective date, current status, status-as-of date, last-checked date, provenance notes, and review state. Use explicit unknown or pending values; never invent dates or status.
