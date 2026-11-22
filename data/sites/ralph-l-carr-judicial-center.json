@@ -1,0 +1,54 @@
+{
+  "schema_version": "0.1.0",
+  "site_id": "site:US-CO-RALPH-CARR",
+  "anchor_id": "anchor:judicial-center:US-CO-DEN",
+  "name": "Ralph L. Carr Colorado Judicial Center",
+  "operator_or_authority": "Colorado Judicial Branch / State of Colorado",
+  "jurisdiction_ids": [
+    "jurisdiction:US",
+    "jurisdiction:US-CO"
+  ],
+  "official_information_sources": [
+    {
+      "title": "Ralph L. Carr Judicial Center",
+      "url": "https://www.coloradojudicial.gov/location/ralph-l-carr-judicial-center?language=en",
+      "scope": "Official address and location information"
+    },
+    {
+      "title": "Colorado Supreme Court",
+      "url": "https://www.coloradojudicial.gov/supreme-court",
+      "scope": "Court jurisdiction, public oral arguments, opinions, rules, and public access information"
+    },
+    {
+      "title": "Colorado Attorney General — About the Office",
+      "url": "https://coag.gov/about-us/",
+      "scope": "Department of Law authority, responsibilities, and office location"
+    }
+  ],
+  "institutions": [
+    {
+      "name": "Colorado Supreme Court",
+      "role": "State court of last resort",
+      "source_url": "https://www.coloradojudicial.gov/supreme-court"
+    },
+    {
+      "name": "Colorado Court of Appeals",
+      "role": "Intermediate appellate court",
+      "source_url": "https://www.coloradojudicial.gov/courts/court-of-appeals"
+    },
+    {
+      "name": "Colorado Attorney General / Department of Law",
+      "role": "State legal office and executive-branch counsel",
+      "source_url": "https://coag.gov/about-us/"
+    }
+  ],
+  "public_access_topics": [
+    "public appellate oral arguments",
+    "court schedules and closures",
+    "court opinions and rules",
+    "public court records and access procedures"
+  ],
+  "last_verified": "2026-11-22",
+  "verification_state": "official_information_sources_checked",
+  "notes": "Institutional occupants and functions are recorded separately from the building's physical anchor. Confirm current access, office locations, and schedules with each authority."
+}
