@@ -1,0 +1,153 @@
+{
+  "schema_version": "0.2.0",
+  "collection_id": "legal-source-collection:colorado-official-portals",
+  "description": "Starter discovery index for official Colorado legal and oversight publication portals. These are collection-level pointers, not individual legal instruments or a certification that every item linked from a portal is current.",
+  "legal_sources": [
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-CONSTITUTION-PORTAL",
+      "title": "Colorado Constitution — official legal materials portal",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "People of the State of Colorado; official access provided by the Colorado General Assembly",
+      "source_type": "constitution",
+      "legal_effect": "binding_law_collection",
+      "canonical_url": "https://www.leg.colorado.gov/laws",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "current_collection",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [],
+      "verification_state": "source_checked",
+      "provenance_note": "The General Assembly laws portal identifies the Colorado Constitution as the foundation of state law. This is a portal pointer; cite the relevant constitutional article and section in any substantive record."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-REVISED-STATUTES",
+      "title": "Colorado Revised Statutes — official statutes access and downloads",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly, Office of Legislative Legal Services",
+      "source_type": "statute_collection",
+      "legal_effect": "binding_law_collection",
+      "canonical_url": "https://www.leg.colorado.gov/agencies/office-legislative-legal-services/colorado-revised-statutes",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The Office of Legislative Legal Services explains its role in editing, collating, and revising enacted laws and provides access to CRS titles. Check the edition year and section source notes for every individual provision; online access may include uncertified printouts."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-SESSION-LAWS",
+      "title": "Colorado Session Laws and enacted legislation",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly, Office of Legislative Legal Services",
+      "source_type": "session_laws",
+      "legal_effect": "binding_law_collection",
+      "canonical_url": "https://www.leg.colorado.gov/agencies/office-legislative-legal-services/session-laws-and-statutes",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The General Assembly distinguishes session laws from the codified CRS. Use the enacted act and its section-specific effective-date provisions when recording an individual law; do not infer an effective date from a bill's signature date."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-CODE-OF-COLORADO-REGULATIONS",
+      "title": "Code of Colorado Regulations — official current rules portal",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado Secretary of State; rules are promulgated by authorized agencies",
+      "source_type": "regulation_collection",
+      "legal_effect": "binding_law_collection",
+      "canonical_url": "https://www.sos.state.co.us/CCR/Welcome.do",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-SECRETARY-OF-STATE"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The Secretary of State publishes the official CCR and Colorado Register. Record the promulgating agency, rule citation, adoption history, and effective date at the individual-rule level; the Secretary of State is the publisher, not necessarily the rulemaking authority."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-APPELLATE-OPINIONS",
+      "title": "Colorado appellate court opinions",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado Supreme Court and Colorado Court of Appeals",
+      "source_type": "court_opinion_collection",
+      "legal_effect": "judicial_authority_collection",
+      "canonical_url": "https://www.coloradojudicial.gov/supreme-court/opinions",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-SUPREME-COURT",
+        "institution:US-CO-COURT-OF-APPEALS"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The Judicial Branch publishes slip opinions and links to searchable current and archived case law. Slip opinions may be modified, withdrawn, or corrected; capture docket number, opinion date, publication designation, and later history for each case."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-LEGISLATIVE-BILLS",
+      "title": "Colorado bills, resolutions, memorials, and legislative histories",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado General Assembly",
+      "source_type": "legislative_record_collection",
+      "legal_effect": "official_record_collection",
+      "canonical_url": "https://www.leg.colorado.gov/bills/bill-search",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-GENERAL-ASSEMBLY"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "This portal includes bills, memorials, and resolutions, which do not all have the same legal effect. A bill's introduction or passage is not proof of enactment; capture final disposition, enrolled act, chapter number, and effective-date provisions separately."
+    },
+    {
+      "schema_version": "0.2.0",
+      "id": "legal-source:US-CO-STATE-AUDITOR-REPORTS",
+      "title": "Colorado Office of the State Auditor — public audit reports and evaluations",
+      "jurisdiction_id": "jurisdiction:US-CO",
+      "issuing_authority": "Colorado Office of the State Auditor; public release through the Legislative Audit Committee process",
+      "source_type": "audit_report_collection",
+      "legal_effect": "oversight_publication",
+      "canonical_url": "https://content.leg.colorado.gov/audits-search",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "record_status": "ongoing",
+      "status_as_of": "2026-11-22",
+      "last_checked": "2026-11-22",
+      "institution_ids": [
+        "institution:US-CO-STATE-AUDITOR"
+      ],
+      "verification_state": "source_checked",
+      "provenance_note": "The public search portal indexes released audit reports and evaluations. OSA workpapers and some reports remain confidential; never infer that an absent report proves no audit occurred, and never ingest or expose confidential materials."
+    }
+  ]
+}
