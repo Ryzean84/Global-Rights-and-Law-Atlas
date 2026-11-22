@@ -1,0 +1,42 @@
+{
+  "schema_version": "0.1.0",
+  "site_id": "site:US-CO-STATE-AUDITOR",
+  "anchor_id": "anchor:government-office:US-CO-STATE-AUDITOR-DEN",
+  "name": "Colorado Office of the State Auditor",
+  "operator_or_authority": "Colorado General Assembly / Office of the State Auditor",
+  "jurisdiction_ids": [
+    "jurisdiction:US",
+    "jurisdiction:US-CO"
+  ],
+  "institution_ids": [
+    "institution:US-CO-STATE-AUDITOR"
+  ],
+  "official_information_sources": [
+    {
+      "title": "Office of the State Auditor",
+      "url": "https://content.leg.colorado.gov/agencies/office-of-the-state-auditor",
+      "scope": "Mission, contact address, audit reports, and public information"
+    },
+    {
+      "title": "About the Office of the State Auditor",
+      "url": "https://content.leg.colorado.gov/agencies/office-state-auditor/about-us",
+      "scope": "Constitutional position, Legislative Branch placement, statutory audit authority, and organizational information"
+    },
+    {
+      "title": "Legislative Audit Committee Schedule and Agenda",
+      "url": "https://content.leg.colorado.gov/agencies/office-state-auditor/legislative-audit-committee-schedule-agenda",
+      "scope": "Public hearing schedules and locations"
+    }
+  ],
+  "public_access_topics": [
+    "published performance audits",
+    "financial audits",
+    "IT audits",
+    "Legislative Audit Committee hearings",
+    "local-government audit filing guidance",
+    "public reports and accountability resources"
+  ],
+  "last_verified": "2026-11-22",
+  "verification_state": "official_information_sources_checked",
+  "notes": "The Office of the State Auditor is an independent, nonpartisan agency in Colorado's Legislative Branch. Some audit materials are confidential until publicly released; this catalog points to public information and does not imply access to confidential workpapers."
+}

@@ -1,0 +1,91 @@
+{
+  "schema_version": "0.1.0",
+  "id": "jurisdiction:US-CO",
+  "name": {
+    "en": "Colorado"
+  },
+  "jurisdiction_type": "state",
+  "parent_jurisdiction_id": "jurisdiction:US",
+  "identifiers": [
+    {
+      "scheme": "ISO-3166-2",
+      "value": "US-CO"
+    }
+  ],
+  "country_code": "US",
+  "languages": [
+    "en"
+  ],
+  "status": "active",
+  "sources": [
+    {
+      "id": "source:colorado-general-assembly-laws",
+      "title": "Colorado Laws",
+      "authority": "Colorado General Assembly",
+      "document_type": "official_source_portal",
+      "url": "https://leg.colorado.gov/laws",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "legal_status": "reference_portal",
+      "status_as_of": "2026-11-22",
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Official portal linking to the Colorado Constitution, Revised Statutes, session laws, appellate opinions, and executive agency rules."
+    },
+    {
+      "id": "source:colorado-sb26-189",
+      "title": "SB 26-189 — Automated Decision-Making Technology",
+      "authority": "Colorado General Assembly",
+      "document_type": "enacted_bill",
+      "url": "https://leg.colorado.gov/bills/sb26-189",
+      "language": "en",
+      "publication_date": "2026-05-14",
+      "effective_date": "2027-01-01",
+      "legal_status": "enacted_mixed_effective_dates",
+      "status_as_of": "2026-11-22",
+      "last_verified": "2026-11-22",
+      "verification_state": "status_checked",
+      "notes": "Official bill page records Governor signature on 2026-05-14 and Session Laws chapter 131. The act has mixed commencement: specified deployer-disclosure, consumer-rights, and Attorney General enforcement provisions take effect upon signature; other sections take effect 2027-01-01. Consult the signed act for section-specific commencement and applicability. This record is a discovery aid, not a legal interpretation."
+    },
+    {
+      "id": "source:colorado-ag-ai-rulemaking",
+      "title": "Colorado Automated Decision-Making Technology and Chatbot Safety Rulemaking",
+      "authority": "Colorado Attorney General",
+      "document_type": "agency_rulemaking_portal",
+      "url": "https://coag.gov/ai/",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "legal_status": "rulemaking_reference",
+      "status_as_of": "2026-11-22",
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Agency page describes implementation and rulemaking materials. Check current adoption, filing, and effective status before treating draft rules as binding."
+    }
+  ],
+  "coverage": {
+    "areas": [
+      "constitution",
+      "statutes",
+      "session_laws",
+      "legislative_history",
+      "appellate_opinions",
+      "administrative_regulations",
+      "artificial_intelligence",
+      "digital_rights"
+    ],
+    "completeness": "starter_registry",
+    "known_gaps": [
+      "Constitutional text and amendment history not yet normalized",
+      "Revised Statutes not yet indexed title by title",
+      "Session laws and enrolled acts not comprehensively indexed",
+      "Court opinions not yet indexed",
+      "Code of Colorado Regulations not yet indexed",
+      "County and municipal codes not yet indexed",
+      "Tribal legal sources require jurisdiction-specific research and engagement"
+    ]
+  },
+  "last_reviewed": "2026-11-22",
+  "review_status": "starter_record_needs_expansion"
+}

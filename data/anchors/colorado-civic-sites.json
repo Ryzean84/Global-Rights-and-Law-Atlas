@@ -1,0 +1,144 @@
+{
+  "schema_version": "0.1.0",
+  "collection_id": "anchor-collection:colorado-civic-sites",
+  "description": "Colorado civic discovery anchors. Each anchor points to legal jurisdictions and authoritative institutional information; physical sites do not define the full legal jurisdiction.",
+  "anchors": [
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:state-capitol:US-CO-DEN",
+      "name": "Colorado State Capitol",
+      "anchor_type": "state_capitol",
+      "identifiers": [],
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "200 E Colfax Ave, Denver, CO 80203",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn",
+        "https://content.leg.colorado.gov/content/tour-information",
+        "https://content.leg.colorado.gov/capitol-information"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Colorado's legislative and executive civic anchor. Visitor policies are separate from statewide statutes and regulations."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:judicial-center:US-CO-DEN",
+      "name": "Ralph L. Carr Colorado Judicial Center",
+      "anchor_type": "judicial_center",
+      "identifiers": [],
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "2 E 14th Ave, Denver, CO 80203",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://www.coloradojudicial.gov/location/ralph-l-carr-judicial-center?language=en",
+        "https://www.coloradojudicial.gov/supreme-court"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Judicial anchor for the Colorado Supreme Court and Colorado Court of Appeals. Public access to oral arguments and current court schedules must be checked with the Judicial Branch."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:city-hall:US-CO-DEN",
+      "name": "Denver City and County Building",
+      "anchor_type": "city_hall",
+      "identifiers": [],
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO",
+        "jurisdiction:US-CO-DENVER"
+      ],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "1437 Bannock St, Denver, CO 80202",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://www.denvergov.org/Community/Parks-and-Public-Spaces/City-Venues-and-Buildings/City-and-County-Building",
+        "https://www.denvergov.org/Government/Legislation-and-Transparency/How-City-Government-Works"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Municipal civic anchor housing the Mayor's Office, City Council chambers, courtrooms, and other city offices. The Denver municipal jurisdiction record must be maintained separately from this site."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:government-office:US-CO-SECRETARY-OF-STATE-DEN",
+      "name": "Colorado Secretary of State Office",
+      "anchor_type": "government_office",
+      "identifiers": [],
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "1700 Broadway, Suite 550, Denver, CO 80290, USA",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://www.sos.state.co.us/",
+        "https://www.leg.colorado.gov/sites/default/files/visitor_brochure_for_web_accessible.pdf",
+        "https://www.sos.state.co.us/pubs/business/sampleForms/AMDRST_NPC.pdf"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The Colorado State Capitol visitor guide identifies the Secretary of State's office at 1700 Broadway. The Secretary of State's official business filing form gives the office address as 1700 Broadway, Suite 550. Verify office access and services before visiting."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "anchor:government-office:US-CO-STATE-AUDITOR-DEN",
+      "name": "Colorado Office of the State Auditor",
+      "anchor_type": "government_office",
+      "identifiers": [],
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "location": {
+        "country_code": "US",
+        "admin_area": "Colorado",
+        "locality": "Denver",
+        "address": "1375 Sherman St, 5th Floor, Denver, CO 80203-2246, USA",
+        "coordinates": null
+      },
+      "source_urls": [
+        "https://content.leg.colorado.gov/agencies/office-of-the-state-auditor",
+        "https://content.leg.colorado.gov/agencies/office-state-auditor/about-us"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The Colorado General Assembly identifies the Office of the State Auditor at the Capitol Annex. The OSA describes itself as an independent, nonpartisan Legislative Branch agency. Do not confuse its primary office with its separate local-government audit contact."
+    }
+  ],
+  "expansion_policy": {
+    "next_colorado_candidates": [
+      "county courthouses",
+      "municipal halls",
+      "public law libraries and archives",
+      "tribal government archives"
+    ],
+    "rule": "Add an anchor only with an authoritative site source and explicit jurisdiction references. Do not infer legal applicability from proximity."
+  }
+}

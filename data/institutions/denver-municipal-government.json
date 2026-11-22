@@ -1,0 +1,69 @@
+{
+  "schema_version": "0.1.0",
+  "collection_id": "institution-collection:denver-municipal-government",
+  "description": "Starter registry of Denver municipal institutions associated with the Denver City and County Building.",
+  "institutions": [
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-DENVER-MUNICIPAL-GOVERNMENT",
+      "name": "City and County of Denver",
+      "institution_type": "municipal_government",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO",
+        "jurisdiction:US-CO-DENVER"
+      ],
+      "site_ids": [
+        "site:US-CO-DENVER-CITY-HALL"
+      ],
+      "source_urls": [
+        "https://www.denvergov.org/Government/Legislation-and-Transparency/How-City-Government-Works"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Consolidated municipal and county government operating under the Denver Charter."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-DENVER-MAYOR",
+      "name": "Office of the Mayor of Denver",
+      "institution_type": "executive_office",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO",
+        "jurisdiction:US-CO-DENVER"
+      ],
+      "site_ids": [
+        "site:US-CO-DENVER-CITY-HALL"
+      ],
+      "source_urls": [
+        "https://www.denvergov.org/Community/Parks-and-Public-Spaces/City-Venues-and-Buildings/City-and-County-Building",
+        "https://www.denvergov.org/Government/Legislation-and-Transparency/How-City-Government-Works"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The City and County Building is identified by Denver as housing the Mayor's Office."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-DENVER-CITY-COUNCIL",
+      "name": "Denver City Council",
+      "institution_type": "legislative_body",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO",
+        "jurisdiction:US-CO-DENVER"
+      ],
+      "site_ids": [
+        "site:US-CO-DENVER-CITY-HALL"
+      ],
+      "source_urls": [
+        "https://www.denvergov.org/Community/Parks-and-Public-Spaces/City-Venues-and-Buildings/City-and-County-Building",
+        "https://www.denvergov.org/Government/Legislation-and-Transparency/How-City-Government-Works"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Denver identifies City Council meeting chambers in the City and County Building; the Council exercises municipal legislative authority under the Charter."
+    }
+  ]
+}

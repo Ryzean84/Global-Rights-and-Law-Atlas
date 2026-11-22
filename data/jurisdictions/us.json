@@ -1,0 +1,72 @@
+{
+  "schema_version": "0.1.0",
+  "id": "jurisdiction:US",
+  "name": { "en": "United States of America" },
+  "jurisdiction_type": "country",
+  "parent_jurisdiction_id": null,
+  "identifiers": [{ "scheme": "ISO-3166-1-alpha-2", "value": "US" }],
+  "country_code": "US",
+  "languages": ["en"],
+  "status": "active",
+  "sources": [
+    {
+      "id": "source:us-national-archives-constitution",
+      "title": "Constitution of the United States",
+      "authority": "U.S. National Archives",
+      "document_type": "constitution",
+      "url": "https://www.archives.gov/founding-docs/constitution",
+      "language": "en",
+      "publication_date": "1787-09-17",
+      "effective_date": "1789-03-04",
+      "legal_status": "foundational_document",
+      "status_as_of": "2026-11-22",
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Official National Archives resource for the Constitution. The record is a source pointer; consult authoritative legal sources for interpretation and amendment status."
+    },
+    {
+      "id": "source:us-code-house-olrc",
+      "title": "United States Code",
+      "authority": "Office of the Law Revision Counsel, U.S. House of Representatives",
+      "document_type": "codification",
+      "url": "https://uscode.house.gov/",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "legal_status": "official_codification_portal",
+      "status_as_of": "2026-11-22",
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Official source for the United States Code. Check the edition, supplements, and classification status for each provision."
+    },
+    {
+      "id": "source:ecfr",
+      "title": "Code of Federal Regulations",
+      "authority": "Office of the Federal Register and Government Publishing Office",
+      "document_type": "regulatory_codification",
+      "url": "https://www.ecfr.gov/",
+      "language": "en",
+      "publication_date": null,
+      "effective_date": null,
+      "legal_status": "official_regulatory_portal",
+      "status_as_of": "2026-11-22",
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Electronic Code of Federal Regulations. Verify the date and status of each provision and consult the Federal Register for rulemaking history."
+    }
+  ],
+  "coverage": {
+    "areas": ["constitution", "founding_documents", "federal_statutes", "federal_regulations", "federal_courts", "human_rights", "digital_rights"],
+    "completeness": "starter_registry",
+    "known_gaps": [
+      "Declaration of Independence and other founding documents not yet normalized as separate records",
+      "Federal statutes not yet indexed provision by provision",
+      "Federal Register rulemaking history not yet indexed",
+      "Federal court opinions not yet indexed",
+      "Treaties, ratifications, reservations, and status not yet catalogued",
+      "State, tribal, territorial, and local legal systems require separate jurisdiction records"
+    ]
+  },
+  "last_reviewed": "2026-11-22",
+  "review_status": "starter_record_needs_expansion"
+}

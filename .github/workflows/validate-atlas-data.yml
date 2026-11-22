@@ -1,0 +1,37 @@
+name: Validate Atlas data
+
+on:
+  pull_request:
+    paths:
+      - "data/jurisdictions/**/*.json"
+      - "data/anchors/**/*.json"
+      - "data/sites/**/*.json"
+      - "data/institutions/**/*.json"
+      - "schemas/**/*.json"
+      - "scripts/validate_atlas_data.py"
+      - ".github/workflows/validate-atlas-data.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/jurisdictions/**/*.json"
+      - "data/anchors/**/*.json"
+      - "data/sites/**/*.json"
+      - "data/institutions/**/*.json"
+      - "schemas/**/*.json"
+      - "scripts/validate_atlas_data.py"
+      - ".github/workflows/validate-atlas-data.yml"
+
+jobs:
+  validate-atlas-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install JSON Schema validator
+        run: python -m pip install "jsonschema>=4.23,<5"
+      - name: Validate Atlas registries and references
+        run: python scripts/validate_atlas_data.py

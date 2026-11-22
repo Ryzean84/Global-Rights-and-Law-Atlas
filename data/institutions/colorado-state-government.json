@@ -1,0 +1,143 @@
+{
+  "schema_version": "0.1.0",
+  "collection_id": "institution-collection:colorado-state-government",
+  "description": "Starter registry of Colorado legislative and executive institutions associated with the Colorado State Capitol.",
+  "institutions": [
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-GENERAL-ASSEMBLY",
+      "name": "Colorado General Assembly",
+      "institution_type": "legislature",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Colorado's bicameral state legislature, composed of the Senate and House of Representatives."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-SENATE",
+      "name": "Colorado Senate",
+      "institution_type": "legislative_chamber",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Upper chamber of the Colorado General Assembly; listed by the General Assembly among the institutions housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-HOUSE",
+      "name": "Colorado House of Representatives",
+      "institution_type": "legislative_chamber",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Lower chamber of the Colorado General Assembly; listed by the General Assembly among the institutions housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-GOVERNOR",
+      "name": "Office of the Governor of Colorado",
+      "institution_type": "executive_office",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The General Assembly's Capitol visitor information identifies the Governor's Office as housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-LIEUTENANT-GOVERNOR",
+      "name": "Office of the Lieutenant Governor of Colorado",
+      "institution_type": "executive_office",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://content.leg.colorado.gov/Visit-Learn"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The General Assembly's Capitol visitor information identifies the Lieutenant Governor's Office as housed in the Capitol."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-TREASURY",
+      "name": "Office of the Colorado State Treasurer",
+      "institution_type": "executive_office",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-CAPITOL"
+      ],
+      "source_urls": [
+        "https://treasury.colorado.gov/",
+        "https://www.leg.colorado.gov/sites/default/files/visitor_brochure_for_web_accessible.pdf",
+        "https://content.leg.colorado.gov/sites/default/files/fy2026-27_trefig.pdf"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "The State Treasurer is an independently elected constitutional officer whose office is located in the State Capitol. The Treasurer oversees the Department of the Treasury; this record identifies the elected office and its Capitol site, not every department facility."
+    },
+    {
+      "schema_version": "0.1.0",
+      "id": "institution:US-CO-SECRETARY-OF-STATE",
+      "name": "Colorado Secretary of State",
+      "institution_type": "election_authority",
+      "jurisdiction_ids": [
+        "jurisdiction:US",
+        "jurisdiction:US-CO"
+      ],
+      "site_ids": [
+        "site:US-CO-SECRETARY-OF-STATE"
+      ],
+      "source_urls": [
+        "https://www.sos.state.co.us/",
+        "https://www.leg.colorado.gov/sites/default/files/visitor_brochure_for_web_accessible.pdf"
+      ],
+      "last_verified": "2026-11-22",
+      "verification_state": "source_checked",
+      "notes": "Statewide elected executive office responsible for election administration and other statutory public services. The official Capitol visitor guide identifies its office at 1700 Broadway, not inside the Capitol."
+    }
+  ]
+}
