@@ -170,6 +170,40 @@ def main() -> int:
             elif site_id not in institutions[institution_id][1].get("site_ids", []):
                 report(f"{path.relative_to(ROOT)}: site {site_id} lists institution {institution_id}, but the institution does not list the site")
 
+    legal_source_files = sorted((DATA / "legal-sources").rglob("*.json"))
+    legal_sources: dict[str, tuple[Path, dict]] = {}
+    for path in legal_source_files:
+        payload = load_json(path)
+        if not isinstance(payload, dict):
+            continue
+        if payload.get("schema_version") != "0.2.0":
+            report(f"{path.relative_to(ROOT)}: schema_version must be 0.2.0")
+        if not isinstance(payload.get("collection_id"), str) or not payload["collection_id"]:
+            report(f"{path.relative_to(ROOT)}: collection_id is required")
+        records = payload.get("legal_sources")
+        if not isinstance(records, list):
+            report(f"{path.relative_to(ROOT)}: legal_sources must be an array")
+            continue
+        for index, source in enumerate(records):
+            if not isinstance(source, dict):
+                report(f"{path.relative_to(ROOT)}: legal_sources[{index}] must be an object")
+                continue
+            validate_schema(source, schemas["legal_source"], path)
+            source_id = source.get("id")
+            if isinstance(source_id, str):
+                if source_id in legal_sources:
+                    report(f"{path.relative_to(ROOT)}: duplicate legal-source id {source_id} (also in {legal_sources[source_id][0].relative_to(ROOT)})")
+                else:
+                    legal_sources[source_id] = (path, source)
+            jurisdiction_id = source.get("jurisdiction_id")
+            if jurisdiction_id not in jurisdictions:
+                report(f"{path.relative_to(ROOT)}: legal source {source_id} references unknown jurisdiction {jurisdiction_id}")
+            for institution_id in source.get("institution_ids", []):
+                if institution_id not in institutions:
+                    report(f"{path.relative_to(ROOT)}: legal source {source_id} references unknown institution {institution_id}")
+    if not legal_source_files:
+        report("data/legal-sources: no legal-source collections found")
+
     if errors:
         print("\n".join(f"ERROR: {message}" for message in errors))
         print(f"Atlas validation failed with {len(errors)} error(s).")
